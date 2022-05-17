@@ -37,12 +37,10 @@
 <h4>–offset</h4>
 <p>Offset seier kor bounding box må ligge i forhold til kantane på skjermen. Visst bounding box ligg “inn i” offset, er bilete ikkje godkjent. Offset er oppgitt i prosent av kanten til skjermen.<br>
 <br>
-<b>Eksempel på bruk av offset:</b></p>
+<b>Eksempel på bruk av offset:</b><br></p>
 
-<p><i>
 > python detect.py --weights model/test/NilsV1.pt --source model/test/images --offset 10<br>
 > python detect.py --weights model/test/NilsV1.pt --source model/test/images --offset 10.5
-</i></p>
 
 <h3>Funksjonar</h3>
 <p>Min del av programmet har seks forskjellige funksjonar. Kvar funksjon er med på å gjere lagringsprosessen dynamisk, og sjekkar om alle kriterier er godkjent før den lagrar bilete.</p>
