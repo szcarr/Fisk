@@ -13,8 +13,10 @@
 <b>PSU:</b> Coolermaster MWE 750 Bronze V2</p>
 
 <h2>OS</h2>
-<p><b>Operativsystem:</b> Ubuntu 22.04 LTS<br>
-<b>Linux kernel versjon:</b> 5.15.0-27-generic</p>
+<p>
+<b>Operativsystem:</b> Ubuntu 22.04 LTS<br>
+<b>Linux kernel versjon:</b> 5.15.0-27-generic
+</p>
 
 <h2>Roboflow</h2>
 <p> </p>
@@ -25,27 +27,33 @@
 <h2>Docker/NVIDIA Docker</h2>
 <p> </p>
 
-<h2>YoloV5</h2>
-<p>"YOLO" står for "You only look once". YOLO er eit gjenstandsdetekterande algoritme som delar opp bilete i eit rutenett</p>
+<h2>YOLOv5</h2>
+<p>
+"YOLO" står for "You only look once". YOLO er ein gjenstandsdetekterande algoritme som delar opp bilete i eit rutenett. Kvar celle i rutenettet er ansvarleg for å registrere objekt innad seg sjølv.<br>
+<br>
+"YOLO" er eit av dei mest populere gjenstandsdetekterande algoritme grunna si hastigheit og nøyaktigheit.
+</p>
 
 <h2>Programmet</h2>
-<p>Fila <a href="https://github.com/ultralytics/yolov5/blob/master/detect.py" target="_blank">"detect.py"</a> er frå ein åpen kildekode. Personleg prøvar eg å følge <a href="https://peps.python.org/pep-0008/" target="_blank">PEP 8 Style Guide</a> for Python når eg programmerar.</p>
+<p>
+Fila <a href="https://github.com/ultralytics/yolov5/blob/master/detect.py" target="_blank">"detect.py"</a> er frå ein åpen kildekode. Personleg prøvar eg å følge <a href="https://peps.python.org/pep-0008/" target="_blank">PEP 8 Style Guide</a> for Python når eg programmerar.
+</p>
 
 <h3>Kommandolinje argument</h3>
-
 <p>
 Kommandolinje argument er brukar spesifiserte parameter/variablar som ein kan ta inn i sjølve programmet<br>
 </p>
 
 > detect.py --offset 15
 
-<p>Her er argumentet <i>--offset 15</i> det vil seie at variabelen <i>offset</i> fekk verdien <i>15</i><br>
-<i>--offset 15</i> er då eit eksempel</p>
+<p>Her er argumentet <i>"--offset 15"</i> det vil seie at variabelen <i>offset</i> fekk verdien <i>15</i><br>
+<i>"--offset 15"</i> er då eit eksempel på eit kommandolinje argument.</p>
 
 <h4>–offset</h4>
 <p>Offset seier kor bounding box må ligge i forhold til kantane på skjermen. Om bounding box ligg “inn i” offset boksane, er bilete ikkje godkjent. Offset er oppgitt i prosent av kanten til skjermen.<br>
 <br>
-<b>Eksempel på bruk av offset:</b><br></p>
+<b>Eksempel på bruk av offset:</b><br>
+</p>
 
 > python detect.py --weights model/test/NilsV1.pt --source model/test/images --offset 10<br>
 > python detect.py --weights model/test/NilsV1.pt --source model/test/images --offset 10.5
