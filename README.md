@@ -25,7 +25,7 @@
 <h2>Yolov5</h2>
 
 <h2>Programmet</h2>
-<p>Fila <a href="https://github.com/ultralytics/yolov5/blob/master/detect.py" target="_blank">"detect.py" er frå ei åpen kilde bibliotek. Personleg prøvar eg å følge <a href="https://peps.python.org/pep-0008/" target="_blank">PEP 8 Style Guide</a> for Python når eg programmerar.</p>
+<p>Fila <a href="https://github.com/ultralytics/yolov5/blob/master/detect.py" target="_blank">"detect.py"</a> er frå ei åpen kilde bibliotek. Personleg prøvar eg å følge <a href="https://peps.python.org/pep-0008/" target="_blank">PEP 8 Style Guide</a> for Python når eg programmerar.</p>
 
 <h3>Command line args:</h3>
 
