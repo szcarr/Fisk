@@ -31,11 +31,19 @@
 <h2>Programmet</h2>
 <p>Fila <a href="https://github.com/ultralytics/yolov5/blob/master/detect.py" target="_blank">"detect.py"</a> er frå ein åpen kildekode. Personleg prøvar eg å følge <a href="https://peps.python.org/pep-0008/" target="_blank">PEP 8 Style Guide</a> for Python når eg programmerar.</p>
 
-<h3>Command line args</h3>
+<h3>Kommandolinje argument</h3>
 
+<p>
+Kommandolinje argument er brukar spesifiserte parameter/variablar som ein kan ta inn i sjølve programmet<br>
+</p>
+
+> detect.py --offset 15
+
+<p>Her er argumentet <i>--offset 15</i> det vil seie at variabelen <i>offset</i> fekk verdien <i>15</i><br>
+<i>--offset 15</i> er då eit eksempel</p>
 
 <h4>–offset</h4>
-<p>Offset seier kor bounding box må ligge i forhold til kantane på skjermen. Visst bounding box ligg “inn i” offset, er bilete ikkje godkjent. Offset er oppgitt i prosent av kanten til skjermen.<br>
+<p>Offset seier kor bounding box må ligge i forhold til kantane på skjermen. Om bounding box ligg “inn i” offset boksane, er bilete ikkje godkjent. Offset er oppgitt i prosent av kanten til skjermen.<br>
 <br>
 <b>Eksempel på bruk av offset:</b><br></p>
 
