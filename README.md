@@ -31,9 +31,10 @@ Command line args:
 
 –offset
 Offset seier kor bounding box må ligge i forhold til kantane på skjermen. Visst bounding box ligg “inn i” offset, er bilete ikkje godkjent. Offset er oppgitt i prosent av kanten til skjermen.
-
+> python detect.py --weights model/test/NilsV1.pt --source model/test/images --offset 10
 
 check_if_bounding_box_is_large_enough():
+
 
 
 <h2>Kjelder</h2>
