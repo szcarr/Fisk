@@ -25,7 +25,7 @@
 <h2>Yolov5</h2>
 
 <h2>Programmet</h2>
-<p>Personleg prøvar eg å følge <a href="https://peps.python.org/pep-0008/">PEP 8 Style Guide</a> for Python når eg programmerar. Min del av programmet har seks forskjellige funksjonar. Kvar av dei funksjonane er med på å gjere lagringsprosessen dynamisk, og sjekkar om alle kriterier er godkjent før den lagrar bilete.</p>
+<p>Personleg prøvar eg å følge <a href="https://peps.python.org/pep-0008/" target="_blank">PEP 8 Style Guide</a> for Python når eg programmerar. Min del av programmet har seks forskjellige funksjonar. Kvar av dei funksjonane er med på å gjere lagringsprosessen dynamisk, og sjekkar om alle kriterier er godkjent før den lagrar bilete.</p>
 Command line args:
 
 
