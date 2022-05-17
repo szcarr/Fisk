@@ -1,4 +1,4 @@
-<h1>FISKAI</h1>
+<h1>FiskAI</h1>
 
 <h2>Introduksjon</h2>
 <p>
@@ -49,11 +49,17 @@ Kommandolinje argument er brukar spesifiserte parameter/variablar som ein kan ta
 
 > detect.py --offset 15
 
-<p>Her er argumentet <i>"--offset 15"</i> det vil seie at variabelen <i>offset</i> fekk verdien <i>15</i><br>
-<i>"--offset 15"</i> er då eit eksempel på eit kommandolinje argument.</p>
+> detect.py `<argument>`
 
-<h4>–offset</h4>
-<p>Offset seier kor bounding box må ligge i forhold til kantane på skjermen. Om bounding box ligg “inn i” offset boksane, er bilete ikkje godkjent. Offset er oppgitt i prosent av kanten til skjermen.<br>
+<p>
+Her er argumentet <i>"--offset 15"</i> det vil seie at variabelen <i>offset</i> fekk verdien <i>15</i><br>
+<i>"--offset 15"</i> er då eit eksempel på eit kommandolinje argument.
+</p>
+
+<h4>-offset</h4>
+<p>
+Offset seier kor bounding box må ligge i forhold til kantane på skjermen. Om bounding box ligg “inn i” offset boksane, er bilete ikkje godkjent. Offset er oppgitt i prosent av kanten til skjermen.<br>
+Offset variablen er av typen <i>float</i>.<br>
 <br>
 <b>Eksempel på bruk av offset:</b><br>
 </p>
@@ -61,14 +67,23 @@ Kommandolinje argument er brukar spesifiserte parameter/variablar som ein kan ta
 > python detect.py --weights model/test/NilsV1.pt --source model/test/images --offset 10<br>
 > python detect.py --weights model/test/NilsV1.pt --source model/test/images --offset 10.5
 
+<h4>-detection-amount</h4>
+<p>
+Seier kor mange detections brukaren ønsker å. Programmet filtrerar ut alle bilder som er mindre enn <i>detection-amount</i> eller større enn <i>detection-amount</i>
+</p>
+
 <h3>Funksjonar</h3>
-<p>Min del av programmet har seks forskjellige funksjonar. Kvar funksjon er med på å gjere lagringsprosessen dynamisk, og sjekkar om alle kriterier er godkjent før den lagrar bilete.</p>
+<p>
+Min del av programmet har seks forskjellige funksjonar. Kvar funksjon er med på å gjere lagringsprosessen dynamisk, og sjekkar om alle kriterier er godkjent før den lagrar bilete.
+</p>
 
 </h4>check_if_bounding_box_is_large_enough():</h4>
 
 <h3>Ekstra</h3>
+<p>
+</p>
 
-<h2>KJELDER</h2>
+<h2>Kjelder</h2>
 Kva er docker?
 https://docs.nvidia.com/deeplearning/frameworks/user-guide/index.html
 
