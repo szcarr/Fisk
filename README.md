@@ -58,7 +58,9 @@ Her er argumentet <i>"--offset 15"</i> det vil seie at variabelen <i>offset</i> 
 
 <h4>-offset</h4>
 <p>
-Offset seier kor bounding box må ligge i forhold til kantane på skjermen. Om bounding box ligg “inn i” offset boksane, er bilete ikkje godkjent. Offset er oppgitt i prosent av kanten til skjermen.<br>
+Offset seier kor bounding box må ligge i forhold til kantane på skjermen.
+Om bounding box ligg “inn i” offset boksane, er bilete ikkje godkjent.
+Offset er oppgitt i prosent av kanten til skjermen.<br>
 Offset variablen er av typen <i>float</i>.<br>
 <br>
 <b>Eksempel på bruk av offset:</b><br>
@@ -69,7 +71,10 @@ Offset variablen er av typen <i>float</i>.<br>
 
 <h4>-detection-amount</h4>
 <p>
-Seier kor mange detections brukaren ønsker å. Programmet filtrerar ut alle bilder som er mindre enn <i>detection-amount</i> eller større enn <i>detection-amount</i>
+Seier kor mange detections brukaren ønsker å.
+Programmet filtrerar ut alle bilder som er mindre enn <i>detection-amount</i> eller større enn <i>detection-amount</i>.
+Berre bilete som har likt antall deteksjonar som brukaren har satt inn blir lagra.
+Om <i>-detection-amount</i> ikkje er satt in som argument får 
 </p>
 
 <h3>Funksjonar</h3>
@@ -77,16 +82,21 @@ Seier kor mange detections brukaren ønsker å. Programmet filtrerar ut alle bil
 Min del av programmet har seks forskjellige funksjonar. Kvar funksjon er med på å gjere lagringsprosessen dynamisk, og sjekkar om alle kriterier er godkjent før den lagrar bilete.
 </p>
 
-</h4>check_if_bounding_box_is_large_enough():</h4>
+</h4><b>check_if_bounding_box_is_large_enough():</b></h4>
 
 <h3>Ekstra</h3>
 <p>
 </p>
 
 <h2>Kjelder</h2>
-Kva er docker?
-https://docs.nvidia.com/deeplearning/frameworks/user-guide/index.html
 
-Kva er YOLOv5?
-Jocher, G. (2022, 17. Mai). What is YOLOv5. Ultralytics
+<h3>Kva er docker?</h3>
+<p>
+https://docs.nvidia.com/deeplearning/frameworks/user-guide/index.html
+</p>
+
+<h3>Kva er YOLOv5?</h3>
+<p>
+Jocher, G. (2022, 17. Mai). What is YOLOv5. Ultralytics.<br>
 https://docs.ultralytics.com/
+</p>
