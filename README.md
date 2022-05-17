@@ -13,27 +13,32 @@
 <strong>PSU:</strong> Coolermaster MWE 750 Bronze V2</p>
 
 <h2>OS</h2>
-<strong>Operativsystem:</strong> Ubuntu 22.04 LTS
-<strong>Linux kernel versjon:</strong> 5.15.0-27-generic
+<p><strong>Operativsystem:</strong> Ubuntu 22.04 LTS<br>
+<strong>Linux kernel versjon:</strong> 5.15.0-27-generic</p>
 
 <h2>Roboflow</h2>
 
 <h2>Colab</h2>
 
 <h2>Docker/NVIDIA Docker</h2>
-
+<p> </p>
 <h2>Yolov5</h2>
 
 <h2>Programmet</h2>
-<p>Personleg prøvar eg å følge <a href="https://peps.python.org/pep-0008/" target="_blank">PEP 8 Style Guide</a> for Python når eg programmerar. Min del av programmet har seks forskjellige funksjonar. Kvar av dei funksjonane er med på å gjere lagringsprosessen dynamisk, og sjekkar om alle kriterier er godkjent før den lagrar bilete.</p>
-Command line args:
+<p>Fila <a href="https://github.com/ultralytics/yolov5/blob/master/detect.py" target="_blank">"detect.py" er frå ei åpen kilde bibliotek. Personleg prøvar eg å følge <a href="https://peps.python.org/pep-0008/" target="_blank">PEP 8 Style Guide</a> for Python når eg programmerar.</p>
+
+<h3>Command line args:</h3>
 
 
-–offset
-Offset seier kor bounding box må ligge i forhold til kantane på skjermen. Visst bounding box ligg “inn i” offset, er bilete ikkje godkjent. Offset er oppgitt i prosent av kanten til skjermen.
+<h4>–offset</h4>
+<p>Offset seier kor bounding box må ligge i forhold til kantane på skjermen. Visst bounding box ligg “inn i” offset, er bilete ikkje godkjent. Offset er oppgitt i prosent av kanten til skjermen.</p>
+
 > python detect.py --weights model/test/NilsV1.pt --source model/test/images --offset 10
 
-check_if_bounding_box_is_large_enough():
+<h3>Funksjonar</h3>
+<p>Min del av programmet har seks forskjellige funksjonar. Kvar funksjon er med på å gjere lagringsprosessen dynamisk, og sjekkar om alle kriterier er godkjent før den lagrar bilete.</p>
+
+</h4>check_if_bounding_box_is_large_enough():</h4>
 
 
 
