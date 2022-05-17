@@ -5,16 +5,16 @@
 
 <h2>Hardware</h2>
 <p>For dette prosjektet brukar eg følgjande hardware for FiskAI:<br>
-<strong>Motherboard:</strong> MSI H110M PRO VD<br>
-<strong>GPU:</strong> NVIDIA GeForce GTX 1060 Aero ITX 3G OC<br>
-<strong>CPU:</strong> Intel(R) Celeron(R) CPU G3930 @ 2.90GHz<br>
-<strong>Memory:</strong> Corsair DDR4 64GB (2X32GB) 2666 MHz RAM<br>
-<strong>Storage:</strong> Kingston A400 2.5" SSD 120GB<br>
-<strong>PSU:</strong> Coolermaster MWE 750 Bronze V2</p>
+<b>Motherboard:</b> MSI H110M PRO VD<br>
+<b>GPU:</b> NVIDIA GeForce GTX 1060 Aero ITX 3G OC<br>
+<b>CPU:</b> Intel(R) Celeron(R) CPU G3930 @ 2.90GHz<br>
+<b>Memory:</b> Corsair DDR4 64GB (2X32GB) 2666 MHz RAM<br>
+<b>Storage:</b> Kingston A400 2.5" SSD 120GB<br>
+<b>PSU:</b> Coolermaster MWE 750 Bronze V2</p>
 
 <h2>OS</h2>
-<p><strong>Operativsystem:</strong> Ubuntu 22.04 LTS<br>
-<strong>Linux kernel versjon:</strong> 5.15.0-27-generic</p>
+<p><b>Operativsystem:</b> Ubuntu 22.04 LTS<br>
+<b>Linux kernel versjon:</b> 5.15.0-27-generic</p>
 
 <h2>Roboflow</h2>
 <p> </p>
@@ -36,10 +36,13 @@
 
 <h4>–offset</h4>
 <p>Offset seier kor bounding box må ligge i forhold til kantane på skjermen. Visst bounding box ligg “inn i” offset, er bilete ikkje godkjent. Offset er oppgitt i prosent av kanten til skjermen.<br>
-Eksempel på bruk av offset:</p>
+<br>
+<b>Eksempel på bruk av offset:</b></p>
 
-> python detect.py --weights model/test/NilsV1.pt --source model/test/images --offset 10
+<p><i>
+> python detect.py --weights model/test/NilsV1.pt --source model/test/images --offset 10<br>
 > python detect.py --weights model/test/NilsV1.pt --source model/test/images --offset 10.5
+</i></p>
 
 <h3>Funksjonar</h3>
 <p>Min del av programmet har seks forskjellige funksjonar. Kvar funksjon er med på å gjere lagringsprosessen dynamisk, og sjekkar om alle kriterier er godkjent før den lagrar bilete.</p>
