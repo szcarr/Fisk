@@ -1,7 +1,10 @@
-<h1>FiskAI</h1>
+<h1>FISKAI</h1>
 
 <h2>Introduksjon</h2>
-<p>I dette dokumentet kjem eg til å prate om mine endringar i “detect.py” fila.</p>
+<p>
+I dette dokumentet kjem eg til å prate om mine endringar i “detect.py” fila, og forklaringar på dei. Eg listar også opp hardware om ein har lyst og replikere prosjektet.
+
+</p>
 
 <h2>Hardware</h2>
 <p>For dette prosjektet brukar eg følgjande hardware for FiskAI:<br>
@@ -36,7 +39,7 @@
 
 <h2>Programmet</h2>
 <p>
-Fila <a href="https://github.com/ultralytics/yolov5/blob/master/detect.py" target="_blank">"detect.py"</a> er frå ein åpen kildekode. Personleg prøvar eg å følge <a href="https://peps.python.org/pep-0008/" target="_blank">PEP 8 Style Guide</a> for Python når eg programmerar.
+Fila <a href="https://github.com/ultralytics/yolov5/blob/master/detect.py" target="_blank">"detect.py"</a> er frå <i>Ultralytics</i>. Personleg prøvar eg å følge <a href="https://peps.python.org/pep-0008/" target="_blank">PEP 8 Style Guide</a> for Python når eg programmerar.
 </p>
 
 <h3>Kommandolinje argument</h3>
@@ -63,9 +66,9 @@ Kommandolinje argument er brukar spesifiserte parameter/variablar som ein kan ta
 
 </h4>check_if_bounding_box_is_large_enough():</h4>
 
+<h3>Ekstra</h3>
 
-
-<h2>Kjelder</h2>
+<h2>KJELDER</h2>
 Kva er docker?
 https://docs.nvidia.com/deeplearning/frameworks/user-guide/index.html
 
