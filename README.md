@@ -1,5 +1,5 @@
 <h1>FiskAI</h1>
-  <h2>Introduksjon</h2>
+  <h2>  Introduksjon</h2>
     <p>I dette dokumentet kjem eg til å prate om mine endringar i “detect.py” fila.</p>
   <h2>Hardware</h2>
   <p>For dette prosjektet brukar eg følgjande hardware for FiskAI:<br>
