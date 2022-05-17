@@ -36,7 +36,6 @@ Offset seier kor bounding box må ligge i forhold til kantane på skjermen. Viss
 check_if_bounding_box_is_large_enough():
 
 
-
 <h2>Kjelder</h2>
 Kva er docker?
 https://docs.nvidia.com/deeplearning/frameworks/user-guide/index.html
