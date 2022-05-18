@@ -65,7 +65,9 @@ Her er argumentet <i>"--offset 15"</i> det vil seie at variabelen <i>offset</i> 
 Offset seier kor bounding box må ligge i forhold til kantane på skjermen.
 Om bounding box ligg “inn i” offset boksane, er bilete ikkje godkjent.
 Offset er oppgitt i prosent av kanten til skjermen.<br>
-Offset variablen er av typen <i>float</i>.<br>
+Offset variablen er av datatypen <i>float</i>.<br>
+<br>
+Om <i>-offset</i> ikkje er satt in som argument, så blir verdien satt til <i>-1</i><br>
 <br>
 <b>Eksempel på bruk av offset:</b><br>
 </p>
@@ -80,9 +82,9 @@ Offset variablen er av typen <i>float</i>.<br>
 Seier kor mange detektsjonar brukaren ønsker å ha på bilete.<br>
 Programmet filtrerar ut alle bilder som er mindre enn <i>detection-amount</i> eller større enn <i>detection-amount</i>.<br>
 Berre bilete som har likt antall deteksjonar som brukaren har satt inn blir lagra.<br>
--detection-amount er av typen <i>int</i>.<br>
+-detection-amount er av datatypen <i>int</i>.<br>
 <br>
-Om <i>-detection-amount</i> ikkje er satt in som argument, så blir verdien til <i>-1</i><br>
+Om <i>-detection-amount</i> ikkje er satt in som argument, så blir verdien satt til <i>-1</i><br>
 <br>
 <b>Eksempel på bruk av detection-amount:</b><br>
 </p>
@@ -96,7 +98,9 @@ Om <i>-detection-amount</i> ikkje er satt in som argument, så blir verdien til 
 <p>
 Seier minimumstørrelsen til bounding-box oppgit i prosent av brukaren.<br>
 Om den faktiske størrelsen av bounding-boxen som er detektert er større eller lik <i>-bounding-box-size</i> så er bilete godkjent<br>
-<i>-bounding-box-size</i> er av typen <i>float</i><br>
+<i>-bounding-box-size</i> er av datatypen <i>float</i><br>
+<br>
+Om <i>-bounding-box-size</i> ikkje er satt in som argument, så blir verdien satt til <i>-1</i><br>
 <br>
 <b>Eksempel på bruk av bounding-box-size:</b><br>
 
@@ -113,6 +117,9 @@ Seier kva tidsramme som er gyldig for lagring.<br>
 Den hentar tida frå filnamnet. Filnamnet må ha ein viss struktur for at programmet skal kunne hente tida frå filnamnet.<br>
 Forventa filstruktur: *__*__HH-MM-SS.mp4*<br>
 Eksempel filnavn: syd4k__2020-08-01__10-45-01.mp4_13700.jpg<br>
+<i>-time-boundaries</i> er av datatypen <i>list</i> med to element som er av datatypen <i>int</i><br>
+<br>
+Om <i>-time-boundaries</i> ikkje er satt in som argument, så blir begge verdiane satt til <i>-1</i><br>
 <br>
 <b>Eksempel på bruk av -time-boundaries:</b><br>
 </p>
