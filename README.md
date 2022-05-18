@@ -70,7 +70,7 @@ Offset variablen er av typen <i>float</i>.<br>
 > python detect.py --weights model/test/NilsV1.pt --source model/test/images --offset 10.5<br>
 > python detect.py --weights model/test/NilsV1.pt --source model/test/images --offset `<float>`
 
-<h4>-detection-amount</h4>
+<h3>-detection-amount</h3>
 <p>
 Seier kor mange detektsjonar brukaren ønsker å.
 Programmet filtrerar ut alle bilder som er mindre enn <i>detection-amount</i> eller større enn <i>detection-amount</i>.
@@ -85,7 +85,7 @@ Om <i>-detection-amount</i> ikkje er satt in som argument, så blir verdien til 
 > python detect.py --weights model/test/NilsV1.pt --source model/test/images --detection-amount 1<br>
 > python detect.py --weights model/test/NilsV1.pt --source model/test/images --detection-amount `<int>`
 
-<h4>-bounding-box-size</h4>
+<h3>-bounding-box-size</h3>
 <p>
 Seier minimumstørrelsen til bounding-box oppgit i prosent av brukaren.<br>
 Om den faktiske størrelsen av bounding-boxen som er detektert er større eller lik <i>-bounding-box-size</i> så er bilete godkjent<br>
