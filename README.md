@@ -44,7 +44,8 @@ Fila <a href="https://github.com/ultralytics/yolov5/blob/master/detect.py" targe
 
 <h3>Kommandolinje argument</h3>
 <p>
-Kommandolinje argument er brukar spesifiserte parameter/variablar som ein kan ta inn i sjølve programmet<br>
+Kommandolinje argument er brukar spesifiserte parameter/variablar som ein kan ta inn i sjølve programmet.<br>
+Mine personlege argument har standard verdien <i>-1</i> om brukaren ikkje sender inn argument for den variabelen.
 </p>
 
 > detect.py --offset 15
@@ -56,7 +57,7 @@ Her er argumentet <i>"--offset 15"</i> det vil seie at variabelen <i>offset</i> 
 <i>"--offset 15"</i> er då eit eksempel på eit kommandolinje argument.
 </p>
 
-<h4>-offset</h4>
+<h3>-offset</h3>
 <p>
 Offset seier kor bounding box må ligge i forhold til kantane på skjermen.
 Om bounding box ligg “inn i” offset boksane, er bilete ikkje godkjent.
@@ -67,7 +68,7 @@ Offset variablen er av typen <i>float</i>.<br>
 </p>
 
 > python detect.py --weights model/test/NilsV1.pt --source model/test/images --offset 10.5<br>
-> python detect.py --weights model/test/NilsV1.pt --source model/test/images --offset `float`
+> python detect.py --weights model/test/NilsV1.pt --source model/test/images --offset `<float>`
 
 <h4>-detection-amount</h4>
 <p>
@@ -76,13 +77,13 @@ Programmet filtrerar ut alle bilder som er mindre enn <i>detection-amount</i> el
 Berre bilete som har likt antall deteksjonar som brukaren har satt inn blir lagra.
 -detection-amount er av typen <i>int</i>.<br>
 
-Om <i>-detection-amount</i> ikkje er satt in som argument defaultar den verdien til <i>-1</i>
+Om <i>-detection-amount</i> ikkje er satt in som argument, så blir verdien til <i>-1</i>
 <br>
 <b>Eksempel på bruk av detection-amount:</b><br>
 </p>
 
 > python detect.py --weights model/test/NilsV1.pt --source model/test/images --detection-amount 1<br>
-> python detect.py --weights model/test/NilsV1.pt --source model/test/images --detection-amount 1 `int`
+> python detect.py --weights model/test/NilsV1.pt --source model/test/images --detection-amount `<int>`
 
 <h4>-bounding-box-size</h4>
 <p>
