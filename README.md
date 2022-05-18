@@ -176,6 +176,11 @@ Kvar av dei funksjonane er med på å gjere lagringsprosessen dynamisk, og sjekk
 </p>
 
 </h4><b>load_user_defined_timerange():</b></h4>
+<br>
+<br>
+
+![image](https://user-images.githubusercontent.com/67342876/169117134-0915d401-c98d-4f9b-af09-91e868c29cb5.png)
+
 <p>
 </p>
 
