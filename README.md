@@ -181,6 +181,7 @@ Kvar av dei funksjonane er med på å gjere lagringsprosessen dynamisk, og sjekk
 
 </h4><b>make_xml():</b></h4>
 <br>
+<br>
 
 ![image](https://user-images.githubusercontent.com/67342876/169099044-09b97fb4-204f-4e46-b063-3d941817601b.png)
 
