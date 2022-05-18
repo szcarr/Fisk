@@ -58,6 +58,8 @@ Her er argumentet <i>"--offset 15"</i> det vil seie at variabelen <i>offset</i> 
 <i>"--offset 15"</i> er då eit eksempel på eit kommandolinje argument.
 </p>
 
+<br>
+
 <h3>-offset</h3>
 <p>
 Offset seier kor bounding box må ligge i forhold til kantane på skjermen.
@@ -70,6 +72,8 @@ Offset variablen er av typen <i>float</i>.<br>
 
 > python detect.py --weights model/test/NilsV1.pt --source model/test/images --offset 10.0<br>
 > python detect.py --weights model/test/NilsV1.pt --source model/test/images --offset `<float>`
+
+<br>
 
 <h3>-detection-amount</h3>
 <p>
@@ -85,6 +89,8 @@ Om <i>-detection-amount</i> ikkje er satt in som argument, så blir verdien til 
 
 > python detect.py --weights model/test/NilsV1.pt --source model/test/images --detection-amount 1<br>
 > python detect.py --weights model/test/NilsV1.pt --source model/test/images --detection-amount `<int>`
+
+<br>
 
 <h3>-bounding-box-size</h3>
 <p>
