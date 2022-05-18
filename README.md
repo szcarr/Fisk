@@ -137,9 +137,9 @@ Den hentar tida frå filnamnet. Filnamnet må ha ein viss struktur for at progra
 <b>Forventa filstruktur:</b> *__*__HH-MM-SS.mp4*<br>
 <b>Eksempel filnavn:</b> syd4k__2020-08-01__10-45-01.mp4_13700.jpg<br>
 <br>
-Brukaren spesifiserar <code>start_klokketime</code> og <code>slutt_klokketime</code><br>
-Forventa input frå: <code>start_klokketime</code> og <code>slutt_klokketime</code> er eit tal frå 0-24.<br>
-Det er også forventa at <code>start_klokketime</code> <= <code>slutt_klokketime</code>.<br>
+Brukaren spesifiserar <code>minimum_tid</code> og <code>maximum_tid</code> i klokketimar.<br>
+Forventa input frå: <code>minimum_tid</code> og <code>maximum_tid</code> er eit tal frå 0-24.<br>
+Det er også forventa at <code>minimum_tid</code> <= <code>maximum_tid</code>.<br>
 
 <i>-time-boundaries</i> er av datatypen <i>list</i> med to element som er av datatypen <i>int</i><br>
 <br>
