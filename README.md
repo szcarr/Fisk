@@ -190,15 +190,17 @@ Kvar av dei funksjonane er med på å gjere lagringsprosessen dynamisk, og sjekk
 </p>
 
 </h4><b>annotated_picture_renaming():</b></h4>
+<br>
+<br>
 
 ![image](https://user-images.githubusercontent.com/67342876/169122990-f7491d3d-641f-4634-84e5-db07be286357.png)
 <h6>Fig. 9.5.1. annotated_picture_renaming() funksjonen.</h6>
 <p>
 Funksjonen lagar namn på annotert bilete utifrå namnet på det originale ikkje annoterte bilete.<br>
-Annoterte bilete skal ha samme namn som originale bilete berre med suffix "_.jpg"<br>
+Annoterte bilete skal ha samme namn som originale bilete berre med suffix "_.jpg".<br>
 <br>
 <b>Eksempel filnamn:</b><br>
-<code>syd4k__2020-08-01__10-45-01.mp4_13700.jpg</code> --> <code>syd4k__2020-08-01__10-45-01.mp4_13700._jpg</code>
+<code>syd4k__2020-08-01__10-45-01.mp4_13700.jpg</code> --> <code>syd4k__2020-08-01__10-45-01.mp4_13700_.jpg</code>
 
 </p>
 
