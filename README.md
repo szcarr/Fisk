@@ -192,6 +192,10 @@ XML fila har samme namn som det ikkje annoterte bilete. Berre med filextension "
 Vi brukar <i>pascal_voc_writer</i> til å formattere og lage xml fila.<br>
 </p>
 
+![image](https://user-images.githubusercontent.com/67342876/169100199-4a5960af-bdfe-4bd9-9b43-3b9786bd4c3c.png)
+<h6>Fig. 9.7.2</h6>
+
+
 > pip install pascal_voc_writer
 
 <h3>Ekstra</h3>
