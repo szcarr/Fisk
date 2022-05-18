@@ -137,6 +137,10 @@ Den hentar tida frå filnamnet. Filnamnet må ha ein viss struktur for at progra
 <b>Forventa filstruktur:</b> *__*__HH-MM-SS.mp4*<br>
 <b>Eksempel filnavn:</b> syd4k__2020-08-01__10-45-01.mp4_13700.jpg<br>
 <br>
+Brukaren spesifiserar <code>start_klokketime</code> og <code>slutt_klokketime</code><br>
+Forventa input frå: <code>start_klokketime</code> og <code>slutt_klokketime</code> er eit tal frå 0-24.<br>
+Det er også forventa at <code>start_klokketime</code> <= <code>slutt_klokketime</code>.<br>
+
 <i>-time-boundaries</i> er av datatypen <i>list</i> med to element som er av datatypen <i>int</i><br>
 <br>
 <b>Eksempel på bruk av -time-boundaries:</b><br>
@@ -201,12 +205,17 @@ Kvar av dei funksjonane er med på å gjere lagringsprosessen dynamisk, og sjekk
 <h6>Fig. 9.6.1. load_user_defined_timerange() funksjonen.</h6>
 <p>
 Eit av problema eg hadde med å ta inn klokkeslett var at visst brukaren spesifiserte eit tal med meir enn eit siffer så blei talet splitta.<br>
+</p>
 <br>
+
 > python3 detect.py --time-boundaries 7 22
+
 <br>
+<p>
 Gjev følgande output frå <i>time_boundaries</i> variabelen: <i><code>"[[7], [2, 2]]"</code></i>.<br>
-Her må vi plusse streng + streng ikkje tal + tal.
-So for kvar indre liste i lista. Må vi ta elementa frå indre lista og kombinere dei til ein streng.
+Her må vi plusse (streng + streng) ikkje (tal + tal).<br>
+So for kvar indre liste i lista. Må vi ta elementa frå indre lista og kombinere dei til ein streng.<br>
+Etter vi har laga strengen konverterar vi strengen til datatypen <code>int</code>, så vi kan gjere logiske operasjonar med den seinare.<br>
 </p>
 
 </h4><b>make_xml():</b></h4>
