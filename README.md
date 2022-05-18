@@ -141,7 +141,7 @@ Brukaren spesifiserar <code>minimum_tid</code> og <code>maximum_tid</code> i klo
 Forventa input frå: <code>minimum_tid</code> og <code>maximum_tid</code> er eit tal frå 0-24.<br>
 Det er også forventa at <code>minimum_tid</code> <= <code>maximum_tid</code>.<br>
 
-<i>-time-boundaries</i> er av datatypen <i>list</i> med to element som er av datatypen <i>int</i><br>
+<i>-time-boundaries</i> er av datatypen <i>list</i> med to element som er av datatypen <i>str</i><br>
 <br>
 <b>Eksempel på bruk av -time-boundaries:</b><br>
 </p>
@@ -149,6 +149,7 @@ Det er også forventa at <code>minimum_tid</code> <= <code>maximum_tid</code>.<b
 > python detect.py --weights model/test/NilsV1.pt --source model/test/images --time-boundaries 7 21<br>
 > python detect.py --weights model/test/NilsV1.pt --source model/test/images --time-boundaries `<minimum_tid> <maximum_tid>`<br>
 
+<br>
 <h3>Funksjonar</h3>
 <p>
 Min del av programmet har sju forskjellige funksjonar. Fire av dei funksjonane er med på å bestemme om bilete skal bli lagra eller ikkje<br>
