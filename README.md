@@ -64,6 +64,7 @@ Om bounding box ligg “inn i” offset boksane, er bilete ikkje godkjent.
 Offset er oppgitt i prosent av kanten til skjermen.<br>
 Offset variablen er av typen <i>float</i>.<br>
 <br>
+ima![nord__2020-07-28__10-45-00 mp4_11605](https://user-images.githubusercontent.com/67342876/169045110-81535cab-97fc-4299-ae80-6905fe0da9c2.jpg)
 <b>Eksempel på bruk av offset:</b><br>
 </p>
 
