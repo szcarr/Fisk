@@ -66,15 +66,31 @@ Offset variablen er av typen <i>float</i>.<br>
 <b>Eksempel på bruk av offset:</b><br>
 </p>
 
-> python detect.py --weights model/test/NilsV1.pt --source model/test/images --offset 10<br>
-> python detect.py --weights model/test/NilsV1.pt --source model/test/images --offset 10.5
+> python detect.py --weights model/test/NilsV1.pt --source model/test/images --offset 10.5<br>
+> python detect.py --weights model/test/NilsV1.pt --source model/test/images --offset `float`
 
 <h4>-detection-amount</h4>
 <p>
-Seier kor mange detections brukaren ønsker å.
+Seier kor mange detektsjonar brukaren ønsker å.
 Programmet filtrerar ut alle bilder som er mindre enn <i>detection-amount</i> eller større enn <i>detection-amount</i>.
 Berre bilete som har likt antall deteksjonar som brukaren har satt inn blir lagra.
-Om <i>-detection-amount</i> ikkje er satt in som argument får 
+-detection-amount er av typen <i>int</i>.<br>
+
+Om <i>-detection-amount</i> ikkje er satt in som argument defaultar den verdien til <i>-1</i>
+<br>
+<b>Eksempel på bruk av detection-amount:</b><br>
+</p>
+
+> python detect.py --weights model/test/NilsV1.pt --source model/test/images --detection-amount 1<br>
+> python detect.py --weights model/test/NilsV1.pt --source model/test/images --detection-amount 1 `int`
+
+<h4>-bounding-box-size</h4>
+<p>
+Seier minimumstørrelsen til bounding-box oppgit i prosent av brukaren.<br>
+Om den faktiske størrelsen av bounding-boxen som er detektert er større eller lik <i>-bounding-box-size</i> så er bilete godkjent<br>
+<i>-bounding-box-size</i> er av typen <i>float</i>
+
+
 </p>
 
 <h3>Funksjonar</h3>
