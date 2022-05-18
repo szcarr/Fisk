@@ -99,6 +99,8 @@ Om den faktiske størrelsen av bounding-boxen som er detektert er større eller 
 > python detect.py --weights model/test/NilsV1.pt --source model/test/images --bounding-box-size 20.0<br>
 > python detect.py --weights model/test/NilsV1.pt --source model/test/images --bounding-box-size `<float>`
 
+<br>
+
 <h3>-time-boundaries</h3>
 <p>
 Seier kva tidsramme som er gyldig for lagring.<br>
