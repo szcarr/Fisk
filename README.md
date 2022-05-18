@@ -198,11 +198,7 @@ Funksjonen lagar namn på annotert bilete utifrå namnet på det originale ikkje
 Annoterte bilete skal ha samme namn som originale bilete berre med suffix "_.jpg"<br>
 <br>
 <b>Eksempel filnamn:</b><br>
-<code>syd4k__2020-08-01__10-45-01.mp4_13700.jpg</code>
-
-<br>
-<b>Skal bli:</b><br>
-<code>syd4k__2020-08-01__10-45-01.mp4_13700._jpg</code>
+<code>syd4k__2020-08-01__10-45-01.mp4_13700.jpg</code> --> <code>syd4k__2020-08-01__10-45-01.mp4_13700._jpg</code>
 
 </p>
 
