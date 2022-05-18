@@ -40,7 +40,7 @@ For dette prosjektet brukar eg følgjande hardware for FiskAI:<br>
 
 <h2>Programmet</h2>
 <p>
-Fila <a href="https://github.com/ultralytics/yolov5/blob/master/detect.py" target="_blank">"detect.py"</a> er frå <i>Ultralytics</i>. Personleg prøvar eg å følge <a href="https://peps.python.org/pep-0008/" target="_blank">PEP 8 Style Guide</a> for Python når eg programmerar.
+Fila <a href="https://github.com/ultralytics/yolov5/blob/master/detect.py" target="_blank">"detect.py"</a> er frå <i>Ultralytics</i>. Personleg prøvar eg å følge <a href="https://peps.python.org/pep-0008/" target="_blank">PEP 8 Style Guide</a> for Python når eg programmerar, men eg følger ikkje alle reglar som er oppgitt.
 </p>
 
 <h3>Kommandolinje argument</h3>
@@ -94,10 +94,23 @@ Om den faktiske størrelsen av bounding-boxen som er detektert er større eller 
 <br>
 <b>Eksempel på bruk av bounding-box-size:</b><br>
 
+</p>
+
 > python detect.py --weights model/test/NilsV1.pt --source model/test/images --bounding-box-size 20.0<br>
 > python detect.py --weights model/test/NilsV1.pt --source model/test/images --bounding-box-size `<float>`
 
+<h3>-time-boundaries</h3>
+<p>
+Seier kva tidsramme som er gyldig for lagring.<br>
+Den får tida frå filnamnet. Filnamnet må ha ein viss struktur for å kunne hente tida frå filnamnet.<br>
+Forventa filstruktur: *__*__HH-MM-SS.mp4*<br>
+Eksempel filnavn: syd4k__2020-08-01__10-45-01.mp4_13700.jpg<br>
+<br>
+<b>Eksempel på bruk av -time-boundaries:</b><br>
 </p>
+
+> python detect.py --weights model/test/NilsV1.pt --source model/test/images --time-boundaries 7 21<br>
+> python detect.py --weights model/test/NilsV1.pt --source model/test/images --bounding-box-size `<minimum_tid> <maximum_tid>`<br>
 
 <h3>Funksjonar</h3>
 <p>
