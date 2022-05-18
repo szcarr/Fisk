@@ -73,6 +73,11 @@ offset variablen er av datatypen <i>float</i>.<br>
  I dette bilete ser vi ein gyldig boundingbox
 
 ![image](https://user-images.githubusercontent.com/67342876/169091315-98e9ba83-85f9-471e-9e08-82f30baf8044.png)
+ 
+![image](https://user-images.githubusercontent.com/67342876/169094628-b8767a32-ada9-41f7-b6eb-e449890a6372.png)
+
+![image](https://user-images.githubusercontent.com/67342876/169094559-b44283b8-eb7a-4078-8852-b4ee3ec122ad.png)
+
 
 
 <b>Eksempel på bruk av offset:</b><br>
