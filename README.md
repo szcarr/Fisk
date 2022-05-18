@@ -77,11 +77,11 @@ Offset variablen er av typen <i>float</i>.<br>
 
 <h3>-detection-amount</h3>
 <p>
-Seier kor mange detektsjonar brukaren ønsker å.
-Programmet filtrerar ut alle bilder som er mindre enn <i>detection-amount</i> eller større enn <i>detection-amount</i>.
-Berre bilete som har likt antall deteksjonar som brukaren har satt inn blir lagra.
+Seier kor mange detektsjonar brukaren ønsker å ha på bilete.<br>
+Programmet filtrerar ut alle bilder som er mindre enn <i>detection-amount</i> eller større enn <i>detection-amount</i>.<br>
+Berre bilete som har likt antall deteksjonar som brukaren har satt inn blir lagra.<br>
 -detection-amount er av typen <i>int</i>.<br>
-
+<br>
 Om <i>-detection-amount</i> ikkje er satt in som argument, så blir verdien til <i>-1</i><br>
 <br>
 <b>Eksempel på bruk av detection-amount:</b><br>
@@ -110,7 +110,7 @@ Om den faktiske størrelsen av bounding-boxen som er detektert er større eller 
 <h3>-time-boundaries</h3>
 <p>
 Seier kva tidsramme som er gyldig for lagring.<br>
-Den får tida frå filnamnet. Filnamnet må ha ein viss struktur for å kunne hente tida frå filnamnet.<br>
+Den hentar tida frå filnamnet. Filnamnet må ha ein viss struktur for at programmet skal kunne hente tida frå filnamnet.<br>
 Forventa filstruktur: *__*__HH-MM-SS.mp4*<br>
 Eksempel filnavn: syd4k__2020-08-01__10-45-01.mp4_13700.jpg<br>
 <br>
@@ -118,7 +118,7 @@ Eksempel filnavn: syd4k__2020-08-01__10-45-01.mp4_13700.jpg<br>
 </p>
 
 > python detect.py --weights model/test/NilsV1.pt --source model/test/images --time-boundaries 7 21<br>
-> python detect.py --weights model/test/NilsV1.pt --source model/test/images --bounding-box-size `<minimum_tid> <maximum_tid>`<br>
+> python detect.py --weights model/test/NilsV1.pt --source model/test/images --time-boundaries `<minimum_tid> <maximum_tid>`<br>
 
 <h3>Funksjonar</h3>
 <p>
