@@ -198,8 +198,15 @@ Kvar av dei funksjonane er med på å gjere lagringsprosessen dynamisk, og sjekk
 <br>
 
 ![image](https://user-images.githubusercontent.com/67342876/169117134-0915d401-c98d-4f9b-af09-91e868c29cb5.png)
-
+<h6>Fig. 9.6.1. load_user_defined_timerange() funksjonen.</h6>
 <p>
+Eit av problema eg hadde med å ta inn klokkeslett var at visst brukaren spesifiserte eit tal med meir enn eit siffer så blei talet splitta.<br>
+<br>
+> python3 detect.py --time-boundaries 7 22
+<br>
+Gjev følgande output frå <i>time_boundaries</i> variabelen: <i><code>"[[7], [2, 2]]"</code></i>.<br>
+Her må vi plusse streng + streng ikkje tal + tal.
+So for kvar indre liste i lista. Må vi ta elementa frå indre lista og kombinere dei til ein streng.
 </p>
 
 </h4><b>make_xml():</b></h4>
