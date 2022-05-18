@@ -71,6 +71,8 @@ offset variablen er av datatypen <i>float</i>.<br>
 
 ![image](https://user-images.githubusercontent.com/67342876/169094892-5a2484d9-ba90-4f92-a49d-a899370fd161.png)
 
+<h6>Fig 8.2.1 </h6>
+
 ![image](https://user-images.githubusercontent.com/67342876/169091315-98e9ba83-85f9-471e-9e08-82f30baf8044.png)
  
 Boundingboxen er ikkje innanfor <i>offset</i>(det raude), difor er det eit gyldig bilete.
