@@ -152,25 +152,43 @@ Kvar av dei funksjonane er med på å gjere lagringsprosessen dynamisk, og sjekk
 </p>
 
 </h4><b>check_if_bounding_box_is_large_enough():</b></h4>
+
+![image](https://user-images.githubusercontent.com/67342876/169122414-5105c14e-525a-4bfb-880a-d7efd1c9444f.png)
+
 <p>
 
 </p>
 </h4><b>check_if_bounding_box_position_is_legal():</b></h4>
+
+![image](https://user-images.githubusercontent.com/67342876/169122638-1b2b0165-59d9-4b59-8327-42cbbe576f37.png)
+
 <p>
 
 </p>
 
 </h4><b>check_if_only_x_amount_of_detection():</b></h4>
+
+![image](https://user-images.githubusercontent.com/67342876/169122843-93ead6a3-a9e8-44ea-86ca-227cb95874ab.png)
+
+
 <p>
 
 </p>
 
 </h4><b>check_if_time_is_within_bounds():</b></h4>
+
+![image](https://user-images.githubusercontent.com/67342876/169123582-147df78b-ae95-48a5-97d7-0e8d28ba4fbf.png)
+
+
 <p>
 
 </p>
 
 </h4><b>annotated_picture_renaming():</b></h4>
+
+![image](https://user-images.githubusercontent.com/67342876/169122990-f7491d3d-641f-4634-84e5-db07be286357.png)
+
+
 <p>
 
 </p>
