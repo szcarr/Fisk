@@ -123,10 +123,41 @@ Den hentar tida frå filnamnet. Filnamnet må ha ein viss struktur for at progra
 
 <h3>Funksjonar</h3>
 <p>
-Min del av programmet har seks forskjellige funksjonar. Kvar funksjon er med på å gjere lagringsprosessen dynamisk, og sjekkar om alle kriterier er godkjent før den lagrar bilete.
+Min del av programmet har sju forskjellige funksjonar. Fire av dei funksjonane er med på å bestemme om bilete skal bli lagra eller ikkje<br>
+Kvar av dei funksjonane er med på å gjere lagringsprosessen dynamisk, og sjekkar om alle kriterier er godkjent før den lagrar bilete.<br>
 </p>
 
 </h4><b>check_if_bounding_box_is_large_enough():</b></h4>
+<p>
+
+</p>
+</h4><b>check_if_bounding_box_position_is_legal():</b></h4>
+<p>
+
+</p>
+
+</h4><b>check_if_only_x_amount_of_detection():</b></h4>
+<p>
+
+</p>
+
+</h4><b>check_if_time_is_within_bounds():</b></h4>
+<p>
+
+</p>
+
+</h4><b>annotated_picture_renaming():</b></h4>
+<p>
+
+</p>
+
+</h4><b>load_user_defined_timerange():</b></h4>
+<p>
+</p>
+
+</h4><b>make_xml():</b></h4>
+<p>
+</p>
 
 <h3>Ekstra</h3>
 <p>
