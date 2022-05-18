@@ -110,8 +110,8 @@ Om den faktiske størrelsen av bounding-boxen som er detektert er større eller 
 Seier kva tidsramme som er gyldig for lagring.<br>
 Den hentar tida frå filnamnet. Filnamnet må ha ein viss struktur for at programmet skal kunne hente tida frå filnamnet.<br>
 <br>
-<b>Forventa filstruktur: *__*__HH-MM-SS.mp4*</b><br>
-<b>Eksempel filnavn: syd4k__2020-08-01__10-45-01.mp4_13700.jpg</b><br>
+<b>Forventa filstruktur:</b> *__*__HH-MM-SS.mp4*<br>
+<b>Eksempel filnavn:</b> syd4k__2020-08-01__10-45-01.mp4_13700.jpg<br>
 <br>
 <i>-time-boundaries</i> er av datatypen <i>list</i> med to element som er av datatypen <i>int</i><br>
 <br>
