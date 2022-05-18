@@ -192,8 +192,17 @@ Kvar av dei funksjonane er med på å gjere lagringsprosessen dynamisk, og sjekk
 </h4><b>annotated_picture_renaming():</b></h4>
 
 ![image](https://user-images.githubusercontent.com/67342876/169122990-f7491d3d-641f-4634-84e5-db07be286357.png)
-<h6>Fig. 9.6.1. annotated_picture_renaming() funksjonen.</h6>
+<h6>Fig. 9.5.1. annotated_picture_renaming() funksjonen.</h6>
 <p>
+Funksjonen lagar namn på annotert bilete utifrå namnet på det originale ikkje annoterte bilete.<br>
+Annoterte bilete skal ha samme namn som originale bilete berre med suffix "_.jpg"<br>
+<br>
+<b>Eksempel filnamn:</b>
+<code>syd4k__2020-08-01__10-45-01.mp4_13700.jpg</code>
+
+<br>
+<b>Skal bli:</b>
+<code>syd4k__2020-08-01__10-45-01.mp4_13700._jpg</code>
 
 </p>
 
@@ -204,7 +213,7 @@ Kvar av dei funksjonane er med på å gjere lagringsprosessen dynamisk, og sjekk
 ![image](https://user-images.githubusercontent.com/67342876/169117134-0915d401-c98d-4f9b-af09-91e868c29cb5.png)
 <h6>Fig. 9.6.1. load_user_defined_timerange() funksjonen.</h6>
 <p>
-Funksjonen i all hovudsak behandlar input frå parameteret <i>--time-boundaries</i> brukaren og normaliserar den.<br>
+Funksjonen i all hovudsak behandlar input frå parameteret <i>--time-boundaries</i> og normaliserar den.<br>
 Eit av problema eg hadde med å ta inn klokkeslett var at visst brukaren spesifiserte eit tal med meir enn eit siffer så blei talet splitta.<br>
 </p>
 <br>
