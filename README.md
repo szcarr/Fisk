@@ -184,8 +184,7 @@ Kvar av dei funksjonane er med på å gjere lagringsprosessen dynamisk, og sjekk
 <br>
 
 ![image](https://user-images.githubusercontent.com/67342876/169099044-09b97fb4-204f-4e46-b063-3d941817601b.png)
-
-<h6>Fig. 9.7.1</h6>
+<h6>Fig. 9.7.1. make_xml() funksjonen.</h6>
 <p>
 Veldig simpel funksjon som lagar ei XML fil utifrå data vi har fått innad i <i>detect.py</i>.<br>
 XML fila har samme namn som det ikkje annoterte bilete. Berre med filextension ".xml" i staden for ".jpg".<br>
@@ -193,7 +192,7 @@ Vi brukar <i>pascal_voc_writer</i> til å formattere og lage xml fila.<br>
 </p>
 
 ![image](https://user-images.githubusercontent.com/67342876/169100199-4a5960af-bdfe-4bd9-9b43-3b9786bd4c3c.png)
-<h6>Fig. 9.7.2</h6>
+<h6>Fig. 9.7.2. Biblioteket pascal_voc_writer.</h6>
 
 
 > pip install pascal_voc_writer
