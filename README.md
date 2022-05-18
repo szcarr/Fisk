@@ -67,8 +67,13 @@ Om bounding box ligg “inn i” offset boksane, er bilete ikkje godkjent.
 offset er oppgitt i prosent av kanten til skjermen.<br>
 offset variablen er av datatypen <i>float</i>.<br>
 <br>
- 
+
 ![image](https://user-images.githubusercontent.com/67342876/169090720-7dbbca20-a0b5-4008-9118-2b5f97ad7356.png)
+ 
+ I dette bilete ser vi ein gyldig boundingbox
+
+![image](https://user-images.githubusercontent.com/67342876/169091315-98e9ba83-85f9-471e-9e08-82f30baf8044.png)
+
 
 <b>Eksempel på bruk av offset:</b><br>
 </p>
