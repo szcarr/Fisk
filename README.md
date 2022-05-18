@@ -62,10 +62,10 @@ Her er argumentet <i>"--offset 15"</i> det vil seie at variabelen <i>offset</i> 
 
 <h3>-offset</h3>
 <p>
-Offset seier kor bounding box må ligge i forhold til kantane på skjermen.
+Seier kor bounding box må ligge i forhold til kantane på skjermen.
 Om bounding box ligg “inn i” offset boksane, er bilete ikkje godkjent.
-Offset er oppgitt i prosent av kanten til skjermen.<br>
-Offset variablen er av datatypen <i>float</i>.<br>
+offset er oppgitt i prosent av kanten til skjermen.<br>
+offset variablen er av datatypen <i>float</i>.<br>
 <br>
 <b>Eksempel på bruk av offset:</b><br>
 </p>
@@ -109,8 +109,10 @@ Om den faktiske størrelsen av bounding-boxen som er detektert er større eller 
 <p>
 Seier kva tidsramme som er gyldig for lagring.<br>
 Den hentar tida frå filnamnet. Filnamnet må ha ein viss struktur for at programmet skal kunne hente tida frå filnamnet.<br>
-Forventa filstruktur: *__*__HH-MM-SS.mp4*<br>
-Eksempel filnavn: syd4k__2020-08-01__10-45-01.mp4_13700.jpg<br>
+<br>
+<b>Forventa filstruktur: *__*__HH-MM-SS.mp4*</b><br>
+<b>Eksempel filnavn: syd4k__2020-08-01__10-45-01.mp4_13700.jpg</b><br>
+<br>
 <i>-time-boundaries</i> er av datatypen <i>list</i> med to element som er av datatypen <i>int</i><br>
 <br>
 <b>Eksempel på bruk av -time-boundaries:</b><br>
