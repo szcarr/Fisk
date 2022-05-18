@@ -67,18 +67,21 @@ Om bounding box ligg “inn i” offset boksane, er bilete ikkje godkjent.
 offset er oppgitt i prosent av kanten til skjermen.<br>
 offset variablen er av datatypen <i>float</i>.<br>
 <br>
+<strong>Eksempel på gyldig bilete:</strong>
 
-![image](https://user-images.githubusercontent.com/67342876/169090720-7dbbca20-a0b5-4008-9118-2b5f97ad7356.png)
- 
- I dette bilete ser vi ein gyldig boundingbox
+![image](https://user-images.githubusercontent.com/67342876/169094892-5a2484d9-ba90-4f92-a49d-a899370fd161.png)
 
 ![image](https://user-images.githubusercontent.com/67342876/169091315-98e9ba83-85f9-471e-9e08-82f30baf8044.png)
  
+Boundingboxen er ikkje innanfor <i>offset</i>(det raude), difor er det eit gyldig bilete.
+
+<strong>Eksempel på eit ikkje gyldig bilete:</strong>
+
 ![image](https://user-images.githubusercontent.com/67342876/169094628-b8767a32-ada9-41f7-b6eb-e449890a6372.png)
 
 ![image](https://user-images.githubusercontent.com/67342876/169094559-b44283b8-eb7a-4078-8852-b4ee3ec122ad.png)
 
-
+Boundingboxen er ikkje innanfor <i>offset</i>(det raude), difor er det ikkje eit gyldig bilete.
 
 <b>Eksempel på bruk av offset:</b><br>
 </p>
