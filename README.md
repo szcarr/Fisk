@@ -75,7 +75,7 @@ offset variablen er av datatypen <i>float</i>.<br>
 
 ![image](https://user-images.githubusercontent.com/67342876/169091315-98e9ba83-85f9-471e-9e08-82f30baf8044.png)
 
-<h6>Fig 8.2.2. Gyldig boundingbox med visuell offse.t</h6>
+<h6>Fig 8.2.2. Gyldig boundingbox med visuell offset.</h6>
 
 Boundingboxen(grå og grøne boksen rundt fisken) er ikkje inn i <i>offset</i>(det raude), difor er det eit gyldig bilete.
 
@@ -181,7 +181,12 @@ Kvar av dei funksjonane er med på å gjere lagringsprosessen dynamisk, og sjekk
 
 </h4><b>make_xml():</b></h4>
 <p>
+Veldig simpel funksjon som lagar ei XML fil utifrå data vi har fått innad i <i>detect.py</i>.<br>
+XML fila har samme namn som det ikkje annoterte bilete. Berre med filextension ".xml" i staden for ".jpg".<br>
+Vi brukar <i>pascal_voc_writer</i> for å lage ei xml fil.<br>
 </p>
+
+> pip install pascal_voc_writer
 
 <h3>Ekstra</h3>
 <p>
