@@ -71,11 +71,11 @@ offset variablen er av datatypen <i>float</i>.<br>
 
 ![image](https://user-images.githubusercontent.com/67342876/169094892-5a2484d9-ba90-4f92-a49d-a899370fd161.png)
 
-<h6>Fig 8.2.1. Gyldig boundingbox utan visuell offset.</h6>
+<h6>Fig. 8.2.1. Gyldig boundingbox utan visuell offset.</h6>
 
 ![image](https://user-images.githubusercontent.com/67342876/169091315-98e9ba83-85f9-471e-9e08-82f30baf8044.png)
 
-<h6>Fig 8.2.2. Gyldig boundingbox med visuell offset.</h6>
+<h6>Fig. 8.2.2. Gyldig boundingbox med visuell offset.</h6>
 
 Boundingboxen(grå og grøne boksen rundt fisken) er ikkje inn i <i>offset</i>(det raude), difor er det eit gyldig bilete.
 
@@ -83,11 +83,11 @@ Boundingboxen(grå og grøne boksen rundt fisken) er ikkje inn i <i>offset</i>(d
 
 ![image](https://user-images.githubusercontent.com/67342876/169094628-b8767a32-ada9-41f7-b6eb-e449890a6372.png)
 
-<h6>Fig 8.2.3. Ikkje gyldig boundingbox utan visuell offset.</h6>
+<h6>Fig. 8.2.3. Ikkje gyldig boundingbox utan visuell offset.</h6>
 
 ![image](https://user-images.githubusercontent.com/67342876/169094559-b44283b8-eb7a-4078-8852-b4ee3ec122ad.png)
 
-<h6>Fig 8.2.4. Ikkje gyldig boundingbox med visuell offset.</h6>
+<h6>Fig. 8.2.4. Ikkje gyldig boundingbox med visuell offset.</h6>
 
 Boundingboxen(blå boks) er inn i <i>offset</i>(det raude), difor er det ikkje eit gyldig bilete.
 
@@ -185,6 +185,7 @@ Kvar av dei funksjonane er med på å gjere lagringsprosessen dynamisk, og sjekk
 
 ![image](https://user-images.githubusercontent.com/67342876/169099044-09b97fb4-204f-4e46-b063-3d941817601b.png)
 
+<h6>Fig. 9.7.1</h6>
 <p>
 Veldig simpel funksjon som lagar ei XML fil utifrå data vi har fått innad i <i>detect.py</i>.<br>
 XML fila har samme namn som det ikkje annoterte bilete. Berre med filextension ".xml" i staden for ".jpg".<br>
