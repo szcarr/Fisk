@@ -3,17 +3,18 @@
 <h2>Introduksjon</h2>
 <p>
 I dette dokumentet kjem eg til å prate om mine endringar i “detect.py” fila, og forklaringar på dei. Eg listar også opp hardware om ein har lyst og replikere prosjektet.
-
 </p>
 
 <h2>Hardware</h2>
-<p>For dette prosjektet brukar eg følgjande hardware for FiskAI:<br>
+<p>
+For dette prosjektet brukar eg følgjande hardware for FiskAI:<br>
 <b>Motherboard:</b> MSI H110M PRO VD<br>
 <b>GPU:</b> NVIDIA GeForce GTX 1060 Aero ITX 3G OC<br>
 <b>CPU:</b> Intel(R) Celeron(R) CPU G3930 @ 2.90GHz<br>
 <b>Memory:</b> Corsair DDR4 64GB (2X32GB) 2666 MHz RAM<br>
 <b>Storage:</b> Kingston A400 2.5" SSD 120GB<br>
-<b>PSU:</b> Coolermaster MWE 750 Bronze V2</p>
+<b>PSU:</b> Coolermaster MWE 750 Bronze V2
+</p>
 
 <h2>OS</h2>
 <p>
@@ -64,11 +65,10 @@ Om bounding box ligg “inn i” offset boksane, er bilete ikkje godkjent.
 Offset er oppgitt i prosent av kanten til skjermen.<br>
 Offset variablen er av typen <i>float</i>.<br>
 <br>
-ima![nord__2020-07-28__10-45-00 mp4_11605](https://user-images.githubusercontent.com/67342876/169045110-81535cab-97fc-4299-ae80-6905fe0da9c2.jpg)<br>
 <b>Eksempel på bruk av offset:</b><br>
 </p>
 
-> python detect.py --weights model/test/NilsV1.pt --source model/test/images --offset 10.5<br>
+> python detect.py --weights model/test/NilsV1.pt --source model/test/images --offset 10.0<br>
 > python detect.py --weights model/test/NilsV1.pt --source model/test/images --offset `<float>`
 
 <h3>-detection-amount</h3>
@@ -78,7 +78,7 @@ Programmet filtrerar ut alle bilder som er mindre enn <i>detection-amount</i> el
 Berre bilete som har likt antall deteksjonar som brukaren har satt inn blir lagra.
 -detection-amount er av typen <i>int</i>.<br>
 
-Om <i>-detection-amount</i> ikkje er satt in som argument, så blir verdien til <i>-1</i>
+Om <i>-detection-amount</i> ikkje er satt in som argument, så blir verdien til <i>-1</i><br>
 <br>
 <b>Eksempel på bruk av detection-amount:</b><br>
 </p>
@@ -90,8 +90,12 @@ Om <i>-detection-amount</i> ikkje er satt in som argument, så blir verdien til 
 <p>
 Seier minimumstørrelsen til bounding-box oppgit i prosent av brukaren.<br>
 Om den faktiske størrelsen av bounding-boxen som er detektert er større eller lik <i>-bounding-box-size</i> så er bilete godkjent<br>
-<i>-bounding-box-size</i> er av typen <i>float</i>
+<i>-bounding-box-size</i> er av typen <i>float</i><br>
+<br>
+<b>Eksempel på bruk av bounding-box-size:</b><br>
 
+> python detect.py --weights model/test/NilsV1.pt --source model/test/images --bounding-box-size 20.0<br>
+> python detect.py --weights model/test/NilsV1.pt --source model/test/images --bounding-box-size `<float>`
 
 </p>
 
