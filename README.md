@@ -205,7 +205,7 @@ Kvar av dei funksjonane er med på å gjere lagringsprosessen dynamisk, og sjekk
 <h6>Fig. 9.5.1. annotated_picture_renaming() funksjonen.</h6>
 <p>
 Funksjonen lagar namn på annotert bilete utifrå namnet på det originale bilete/frame.<br>
-Annoterte bilete skal ha samme namn som originale bilete berre med suffix "_.jpg".<br>
+Annoterte bilete skal ha samme namn som originale bilete berre med suffix <code>_.jpg</code>.<br>
 <br>
 <b>Eksempel filnamn:</b><br>
 <code>syd4k__2020-08-01__10-45-01.mp4_13700.jpg</code> --> <code>syd4k__2020-08-01__10-45-01.mp4_13700_.jpg</code><br>
@@ -215,10 +215,10 @@ Problemet då var at filnamnet:<br>
 <code>syd4k__2020-08-01__10-45-01.mp4_13700.jpg</code> --> <code>syd4k__2020-08-01__10-45-01_mp4_13700_jpg</code><br>
 <br>
 Som då vil seie at annotert bilete ikkje får riktig namn som spesifisert i oppgåva.<br>
-Vi skulle ha suffixen <code>"_.jpg"</code> ikkje <code>"_jpg"</code><br>
+Vi skulle ha suffixen <code>_.jpg</code> ikkje <code>_jpg</code><br>
 <br>
 Derfor må vi heller splitte opp strengen med suffixen til strengen.<br>
-Deretter tar vi første elementet frå <code>split()</code> funksjonen og legger på <code>"_.jpg"</code> på enden av strengen.
+Deretter tar vi første elementet frå <code>split()</code> funksjonen og legger på <code>_.jpg</code> på enden av strengen.
 
 </p>
 
