@@ -126,6 +126,8 @@ def run(
         t2 = time_sync()
         dt[0] += t2 - t1
 
+
+
         # Inference
         visualize = increment_path(save_dir / Path(path).stem, mkdir=True) if visualize else False
         pred = model(im, augment=augment, visualize=visualize)
@@ -272,8 +274,8 @@ def run(
                                 save_path = str(Path(save_path).with_suffix('.mp4'))  # force *.mp4 suffix on results videos
                                 vid_writer[i] = cv2.VideoWriter(save_path, cv2.VideoWriter_fourcc(*'mp4v'), fps, (bbox_w, bbox_h))
                             
-                            annotated_name = savename.split(".mp4")[0] + ".mp4__" + str(frame) + "_.jpg"
-                            not_annotated_name = savename.split(".mp4")[0] + ".mp4__" + str(frame) + ".jpg"
+                            annotated_name = savename.split(".mp4")[0] + ".mp4___" + str(frame) + "_.jpg"
+                            not_annotated_name = savename.split(".mp4")[0] + ".mp4___" + str(frame) + ".jpg"
                             
 
                             lst = save_path.split("/")
@@ -354,7 +356,7 @@ def check_if_bounding_box_is_large_enough(image_width, image_height, bounding_bo
     percent is how big the bounding box size needs to be (in percentage) to be to pass the filter
     '''
 
-    if percent == -1:
+    if percent == -1: # User did not specify then defaults
         return True
 
     image_size = image_width * image_height
@@ -389,7 +391,7 @@ def check_if_bounding_box_position_is_legal(xy1, xy2, image_width, image_height,
         * offset is the percentage off the screen
     '''
 
-    if offset == -1:
+    if offset == -1: # User did not specify then defaults
         return True
 
     lst = [xy1, xy2]
@@ -420,7 +422,7 @@ def check_if_only_x_amount_of_detection(amount_of_detections, wanted_amount_of_d
     '''
     Returns true if amount_of_detections == wanted_amount_of_detections
     '''
-    if wanted_amount_of_detections == -1: # User did not specify arg
+    if wanted_amount_of_detections == -1: # User did not specify then defaults
         return True
 
     if amount_of_detections == wanted_amount_of_detections:
@@ -450,7 +452,7 @@ def check_if_time_is_within_bounds(img_string, min_time, max_time):
     splitlst = img_string.split("__")
     time = splitlst[2].split(".mp4")[0].split("-")
     hour = int(time[0])
-    if hour <= min_time or hour >= max_time:
+    if hour < min_time or hour > max_time:
         return False
     return True
 
