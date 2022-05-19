@@ -87,24 +87,29 @@ Vi skal trene vår eigen YOLOv5 modell for å gjenkjenne obekta i frå datasette
 
 
 ![image](https://user-images.githubusercontent.com/67342876/169347233-209f9459-4bbd-433a-b5a4-d68cd775f251.png)
+<h6>Fig. 6.1. Copy to drive.</h6>
 
-Først må vi kopiere prosjektet
+Først må vi kopiere prosjektet.
 
 ![image](https://user-images.githubusercontent.com/67342876/169347430-26fd794d-7424-4e37-a767-cff6380b7b00.png)
+<h6>Fig. 6.2. Connect.</h6>
     
 Deretter "connect". Her får vi tildelt ei datamaskin frå Google. Vi får låne maskina i ei kort periode.
 
 ![image](https://user-images.githubusercontent.com/67342876/169347506-08f5afb6-2472-4e67-8edc-8d5520727306.png)
+<h6>Fig. 6.3. Spel av knappen.</h6>
 
 Så følger ein stega nedover og trykker på "spel av knappen".
 
 ![image](https://user-images.githubusercontent.com/67342876/169347937-cdcd2bda-5f85-4c00-aae7-43ebfea9e6e8.png)
-    
-Når ein kjem til "steg[4]" så skal ein ta kode snippen vi fekk frå roboflow, og lime inn i boksen.
+<h6>Fig. 6.4. Roboflow kode snipp.</h6>
 
-Så følger ein stega nedover igjen
+    
+Når ein kjem til "steg[4]" så skal ein ta kode snippen vi fekk frå roboflow, og lime inn i boksen.<br>
+Så følger ein stega nedover igjen.
     
 ![image](https://user-images.githubusercontent.com/67342876/169348039-8b62cc18-f9be-4c8f-be9e-e0325eebe363.png)
+<h6>Fig. 6.5. Resultat.</h6>
 
 Til slutt skal du få ei ".pt" fil. Det er altså modellen du har trent.
 </p>
