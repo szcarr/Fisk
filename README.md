@@ -52,12 +52,12 @@ Disse reglane kjem sjølvsagt an på kva du personleg prøvar å trene.<br>
 <h2>Roboflow</h2>
 <p>
 Roboflow er ei nettside der ein kan laste opp eigne bilder og trene ein modell utifrå dei biletene ein har lasta opp.<br>
-Ein må først lage ein brukar før ein kan lage modellar.<br>
+Ein må først lage ein brukar før ein kan lage modellar. Vi skal ikkje trene modellen her, men vi skal ha nedlastings "snippeten" til vårt "dataset"<br>
 <br>
 
 ![Screenshot from 2022-05-19 14-10-49](https://user-images.githubusercontent.com/67342876/169293974-e5cc5c6e-50df-4391-b9ed-be67aac149e7.png)
 <h6>Fig. 5.1. Nytt prosjekt på roboflow.</h6>
-Først lagar ein eit nytt prosjekt. Her brukar vi <i>Creative Commons</i> lisensen. CC lisensen betyr at folk kan bruke biletene/modellen vår ved visse kriterier.<br>
+Først lagar ein eit nytt prosjekt. Her brukar vi <i>"Creative Commons"</i> lisensen. <i>CC</i> lisensen betyr at folk kan bruke biletene/modellen vår ved visse kriterier.<br>
 <br>
 
 
@@ -74,11 +74,27 @@ Deretter "Generate" og "Export" i format "YOLO v5 PyTorch".<br>
 ![Screenshot from 2022-05-19 14-27-05](https://user-images.githubusercontent.com/67342876/169294563-1354f746-bf10-4cab-902a-e3d1d9c26b41.png)
 <h6>Fig. 5.4. Kodesnipp.</h6>
 
-Til slutt skal ein få ein snipp av kode som ein skal ta med seg vidare til <a href="https://colab.research.google.com/github/ultralytics/yolov5/blob/master/tutorial.ipynb" target="_blank">"google colab"</a>
+Til slutt skal ein få ein snipp av kode som ein skal ta med seg vidare til <a href="https://colab.research.google.com/github/roboflow-ai/yolov5-custom-training-tutorial/blob/main/yolov5-custom-training.ipynb" target="_blank">"google colab"</a>
 </p>
 
 <h2>Colab</h2>
-<p> </p>
+<p>
+Her skal vi trene ein modell utifrå datasettet vi har fått ifrå Roboflow.<br>
+Vi skal trene vår eigen YOLOv5 modell for å gjenkjenne obekta i frå datasettet.<br>
+
+
+
+Først må vi kopiere prosjektet
+
+
+Deretter "connect". Her får vi tildelt ei maskin frå Google. Vi får låne maskina i ei kort periode.
+
+
+Så følger ein stega nedover og trykker på "spel av knappen".
+
+Når ein kjem til "steg[4]" så skal ein ta kode snippen frå roboflow, og lime inn i boksen.
+
+</p>
 
 <h2>Docker/NVIDIA Docker</h2>
 <p> </p>
