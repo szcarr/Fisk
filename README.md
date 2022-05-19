@@ -54,17 +54,21 @@ Disse reglane kjem sjølvsagt an på kva du personleg prøvar å trene.<br>
 Roboflow er ei nettside der ein kan laste opp eigne bilder og trene ein modell utifrå dei biletene ein har lasta opp.<br>
 Ein må først lage ein brukar før ein kan lage modellar.<br>
 
-
+![Screenshot from 2022-05-19 14-10-49](https://user-images.githubusercontent.com/67342876/169293974-e5cc5c6e-50df-4391-b9ed-be67aac149e7.png)
 
 Først lagar ein eit nytt prosjekt.
 
-
+![Screenshot from 2022-05-19 14-22-12](https://user-images.githubusercontent.com/67342876/169294022-3121ac11-e9c8-43f8-a656-effc10925f06.png)
 
 Så laster ein opp bileter.
 
-
+![Screenshot from 2022-05-19 14-23-47](https://user-images.githubusercontent.com/67342876/169294099-aa14e3f2-5898-4a0f-b295-750e757751b6.png)
+    
 Deretter "Generate" og "Export" i format "YOLO v5 PyTorch"
 
+![Screenshot from 2022-05-19 14-27-05](https://user-images.githubusercontent.com/67342876/169294563-1354f746-bf10-4cab-902a-e3d1d9c26b41.png)
+    
+Til slutt skal ein få ein snip av kode som ein skal ta med seg vidare til <a href="https://colab.research.google.com/github/ultralytics/yolov5/blob/master/tutorial.ipynb" target="_blank">"google colab"</a>
 </p>
 
 <h2>Colab</h2>
