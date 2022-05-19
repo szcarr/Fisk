@@ -2,7 +2,7 @@
 
 <h2>Introduksjon</h2>
 <p>
-I dette dokumentet kjem eg til å prate om mine endringar i “detect.py” fila, og forklaringar på dei. Eg listar også opp hardware om ein har lyst og replikere prosjektet.
+I dette dokumentet kjem eg til å prate om mine endringar i “detect.py” fila, og forklaringar på dei. Eg listar også opp hardware om ein har lyst og replikere prosjektet. Her er også ein "guide" for korleis ein sjølv kan trene nye egendefinerte modellar.
 </p>
 
 <h2>Hardware</h2>
@@ -32,7 +32,7 @@ labelImg er eit program som ein kan annotere bilete manuelt.<br>
     <li>Om det ønska objektet ligg bak eit anna objekt skal ein tegne bounding boxen som om ein kunne sjå heile ønska objektet.</li>
     <li>Bilete skal vere tydelig, og ikkje "blurry".</li>
     <li>Objektet skal ikkje gå utanfor bilete.</li>
-    <li>Objektet skal ikkje vere for likt omgjevnadane</li>
+    <li>Objektet skal ikkje vere for likt omgjevnadane sine.</li>
 </ul>
 <br>
 Disse reglane kjem sjølvsagt an på kva du personleg prøvar å trene.<br>
@@ -43,6 +43,7 @@ Disse reglane kjem sjølvsagt an på kva du personleg prøvar å trene.<br>
 
 ![Screenshot from 2022-05-19 13-59-56](https://user-images.githubusercontent.com/67342876/169288456-3f369b34-b540-46c5-ae16-aa83036f7505.png)
 <h6>Fig. 4.2. Dårleg annotert bilete frå labelImg.</h6>
+<br>
 
 > pip3 install labelImg
 
@@ -51,6 +52,19 @@ Disse reglane kjem sjølvsagt an på kva du personleg prøvar å trene.<br>
 <h2>Roboflow</h2>
 <p>
 Roboflow er ei nettside der ein kan laste opp eigne bilder og trene ein modell utifrå dei biletene ein har lasta opp.<br>
+Ein må først lage ein brukar før ein kan lage modellar.<br>
+
+
+
+Først lagar ein eit nytt prosjekt.
+
+
+
+Så laster ein opp bileter.
+
+
+Deretter "Generate" og "Export" i format "YOLO v5 PyTorch"
+
 </p>
 
 <h2>Colab</h2>
@@ -107,11 +121,11 @@ offset variablen er av datatypen <i>float</i>.<br>
 
 ![image](https://user-images.githubusercontent.com/67342876/169094892-5a2484d9-ba90-4f92-a49d-a899370fd161.png)
 
-<h6>Fig. 8.2.1. Gyldig boundingbox utan visuell offset.</h6>
+<h6>Fig. 9.2.1. Gyldig boundingbox utan visuell offset.</h6>
 
 ![image](https://user-images.githubusercontent.com/67342876/169091315-98e9ba83-85f9-471e-9e08-82f30baf8044.png)
 
-<h6>Fig. 8.2.2. Gyldig boundingbox med visuell offset.</h6>
+<h6>Fig. 9.2.2. Gyldig boundingbox med visuell offset.</h6>
 
 Boundingboxen(grå og grøne boksen rundt fisken) er ikkje inn i <i>offset</i>(det raude), difor er det eit gyldig bilete.
 
@@ -119,11 +133,11 @@ Boundingboxen(grå og grøne boksen rundt fisken) er ikkje inn i <i>offset</i>(d
 
 ![image](https://user-images.githubusercontent.com/67342876/169094628-b8767a32-ada9-41f7-b6eb-e449890a6372.png)
 
-<h6>Fig. 8.2.3. Ikkje gyldig boundingbox utan visuell offset.</h6>
+<h6>Fig. 9.2.3. Ikkje gyldig boundingbox utan visuell offset.</h6>
 
 ![image](https://user-images.githubusercontent.com/67342876/169094559-b44283b8-eb7a-4078-8852-b4ee3ec122ad.png)
 
-<h6>Fig. 8.2.4. Ikkje gyldig boundingbox med visuell offset.</h6>
+<h6>Fig. 9.2.4. Ikkje gyldig boundingbox med visuell offset.</h6>
 
 Boundingboxen(blå boks) er inn i <i>offset</i>(det raude), difor er det ikkje eit gyldig bilete.
 
@@ -230,7 +244,7 @@ Kvar av dei funksjonane er med på å gjere lagringsprosessen dynamisk, og sjekk
 <br>
 
 ![image](https://user-images.githubusercontent.com/67342876/169122990-f7491d3d-641f-4634-84e5-db07be286357.png)
-<h6>Fig. 9.5.1. annotated_picture_renaming() funksjonen.</h6>
+<h6>Fig. 10.5.1. annotated_picture_renaming() funksjonen.</h6>
 <p>
 Funksjonen lagar namn på annotert bilete utifrå namnet på det originale bilete/frame.<br>
 Annoterte bilete skal ha samme namn som originale bilete berre med suffix <code>_.jpg</code>.<br>
@@ -247,7 +261,7 @@ Vi skulle ha suffixen <code>_.jpg</code> ikkje <code>_jpg</code><br>
 <br>
 Derfor må vi heller splitte opp strengen med suffixen til strengen.<br>
 Deretter tar vi første elementet frå <code>split()</code> funksjonen og legger på <code>_.jpg</code> på enden av strengen.<br>
-Sjå <i>Fig. 9.5.1.</i>
+Sjå <i>Fig. 10.5.1.</i>
 
 </p>
 
@@ -256,7 +270,7 @@ Sjå <i>Fig. 9.5.1.</i>
 <br>
 
 ![image](https://user-images.githubusercontent.com/67342876/169117134-0915d401-c98d-4f9b-af09-91e868c29cb5.png)
-<h6>Fig. 9.6.1. load_user_defined_timerange() funksjonen.</h6>
+<h6>Fig. 10.6.1. load_user_defined_timerange() funksjonen.</h6>
 <p>
 Funksjonen i all hovudsak behandlar input frå parameteret <i>--time-boundaries</i> og normaliserar den.<br>
 Eit av problema eg hadde med å ta inn klokkeslett var at visst brukaren spesifiserte eit tal med meir enn eit siffer så blei talet splitta.<br>
@@ -278,7 +292,7 @@ Etter vi har laga strengen konverterar vi strengen til datatypen <code>int</code
 <br>
 
 ![image](https://user-images.githubusercontent.com/67342876/169099044-09b97fb4-204f-4e46-b063-3d941817601b.png)
-<h6>Fig. 9.7.1. make_xml() funksjonen.</h6>
+<h6>Fig. 10.7.1. make_xml() funksjonen.</h6>
 <p>
 Veldig simpel funksjon som lagar ei XML fil utifrå data vi har fått innad i <i>detect.py</i>.<br>
 XML fila har samme namn som det ikkje annoterte bilete. Berre med filextension ".xml" i staden for ".jpg".<br>
@@ -286,7 +300,7 @@ Vi brukar <i>pascal_voc_writer</i> til å formattere og lage xml fila.<br>
 </p>
 
 ![image](https://user-images.githubusercontent.com/67342876/169100199-4a5960af-bdfe-4bd9-9b43-3b9786bd4c3c.png)
-<h6>Fig. 9.7.2. Biblioteket pascal_voc_writer.</h6>
+<h6>Fig. 10.7.2. Biblioteket pascal_voc_writer.</h6>
 
 
 
