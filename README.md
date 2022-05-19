@@ -128,8 +128,7 @@ Kommandolinje argument er brukar spesifiserte parameter/variablar som ein kan ta
 Mine personlege argument har standard verdien <i>-1</i> om brukaren ikkje sender inn argument for den variabelen.
 </p>
 
-> detect.py --offset 15
-
+> detect.py --offset 15<br>
 > detect.py `<argument>`
 
 <p>
