@@ -218,7 +218,8 @@ Som då vil seie at annotert bilete ikkje får riktig namn som spesifisert i opp
 Vi skulle ha suffixen <code>_.jpg</code> ikkje <code>_jpg</code><br>
 <br>
 Derfor må vi heller splitte opp strengen med suffixen til strengen.<br>
-Deretter tar vi første elementet frå <code>split()</code> funksjonen og legger på <code>_.jpg</code> på enden av strengen.
+Deretter tar vi første elementet frå <code>split()</code> funksjonen og legger på <code>_.jpg</code> på enden av strengen.<br>
+Sjå <code>Fig. 9.5.1.</code>
 
 </p>
 
