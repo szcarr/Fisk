@@ -22,8 +22,29 @@ For dette prosjektet brukar eg følgjande hardware for FiskAI:<br>
 <b>Linux kernel versjon:</b> 5.15.0-27-generic
 </p>
 
+<h2>labelImg</h2>
+<p>
+labelImg er eit program som ein kan annotere bilete manuelt.<br>
+<br>
+<b>Generelle reglar for annotering av bilete:</b>
+<ul>
+    <li>Bounding boxen som ein tegnar opp skal vere så tett inn på objektet som mogleg.</li>
+    <li>Om det ønska objektet ligg bak eit anna objekt skal ein tegne bounding boxen som om ein kunne sjå heile ønska objektet.</li>
+    <li>Bilete skal vere tydelig, og ikkje "blurry".</li>
+    <li>Objektet skal ikkje gå utanfor bilete.</li>
+</ul>
+<br>
+Disse reglane kjem sjølvsagt an på kva du personleg prøvar å trene.<br>
+<br>
+
+> pip3 install labelImg
+
+</p>
+
 <h2>Roboflow</h2>
-<p> </p>
+<p>
+Roboflow er ei nettside der ein kan laste opp eigne bilder og trene ein modell utifrå dei biletene ein har lasta opp.<br>
+</p>
 
 <h2>Colab</h2>
 <p> </p>
@@ -219,7 +240,7 @@ Vi skulle ha suffixen <code>_.jpg</code> ikkje <code>_jpg</code><br>
 <br>
 Derfor må vi heller splitte opp strengen med suffixen til strengen.<br>
 Deretter tar vi første elementet frå <code>split()</code> funksjonen og legger på <code>_.jpg</code> på enden av strengen.<br>
-Sjå <code>Fig. 9.5.1.</code>
+Sjå <i>Fig. 9.5.1.</i>
 
 </p>
 
