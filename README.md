@@ -32,10 +32,17 @@ labelImg er eit program som ein kan annotere bilete manuelt.<br>
     <li>Om det ønska objektet ligg bak eit anna objekt skal ein tegne bounding boxen som om ein kunne sjå heile ønska objektet.</li>
     <li>Bilete skal vere tydelig, og ikkje "blurry".</li>
     <li>Objektet skal ikkje gå utanfor bilete.</li>
+    <li>Objektet skal ikkje vere for likt omgjevnadane</li>
 </ul>
 <br>
 Disse reglane kjem sjølvsagt an på kva du personleg prøvar å trene.<br>
 <br>
+
+![Screenshot from 2022-05-19 13-55-48](https://user-images.githubusercontent.com/67342876/169287937-1cb80125-2ac3-49eb-ad4a-c0b5597c4beb.png)
+<h6>Fig. 4.1. Bra annotert bilete frå labelImg.</h6>
+
+![Screenshot from 2022-05-19 13-59-56](https://user-images.githubusercontent.com/67342876/169288456-3f369b34-b540-46c5-ae16-aa83036f7505.png)
+<h6>Fig. 4.2. Dårleg annotert bilete frå labelImg.</h6>
 
 > pip3 install labelImg
 
@@ -280,6 +287,7 @@ Vi brukar <i>pascal_voc_writer</i> til å formattere og lage xml fila.<br>
 
 ![image](https://user-images.githubusercontent.com/67342876/169100199-4a5960af-bdfe-4bd9-9b43-3b9786bd4c3c.png)
 <h6>Fig. 9.7.2. Biblioteket pascal_voc_writer.</h6>
+
 
 
 > pip install pascal_voc_writer
