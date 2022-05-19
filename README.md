@@ -24,7 +24,7 @@ For dette prosjektet brukar eg følgjande hardware for FiskAI:<br>
 
 <h2>labelImg</h2>
 <p>
-labelImg er eit program som ein kan annotere bilete manuelt.<br>
+labelImg er eit program som ein kan bruke til å annotere bilete manuelt.<br>
 <br>
 <b>Generelle reglar for annotering av bilete:</b>
 <ul>
