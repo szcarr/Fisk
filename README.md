@@ -45,7 +45,10 @@ Disse reglane kjem sjølvsagt an på kva du personleg prøvar å trene.<br>
 <h6>Fig. 4.2. Dårleg annotert bilete frå labelImg.</h6>
 <br>
 
-> pip3 install labelImg
+> pip3 install labelImg<br>
+<br>
+<b>For å køyre:</b><br>
+> labelImg
 
 </p>
 
@@ -74,7 +77,7 @@ Deretter "Generate" og "Export" i format "YOLO v5 PyTorch".<br>
 ![Screenshot from 2022-05-19 14-27-05](https://user-images.githubusercontent.com/67342876/169294563-1354f746-bf10-4cab-902a-e3d1d9c26b41.png)
 <h6>Fig. 5.4. Kodesnipp.</h6>
 
-Til slutt skal ein få ein snipp av kode som ein skal ta med seg vidare til <a href="https://colab.research.google.com/github/roboflow-ai/yolov5-custom-training-tutorial/blob/main/yolov5-custom-training.ipynb" target="_blank">"google colab"</a>
+Til slutt skal ein få ein snipp av kode som ein skal ta med seg vidare til <a href="https://colab.research.google.com/github/roboflow-ai/yolov5-custom-training-tutorial/blob/main/yolov5-custom-training.ipynb" target="_blank"><i>Google Colab</i></a>.
 </p>
 
 <h2>Colab</h2>
@@ -83,18 +86,25 @@ Her skal vi trene ein modell utifrå datasettet vi har fått ifrå Roboflow.<br>
 Vi skal trene vår eigen YOLOv5 modell for å gjenkjenne obekta i frå datasettet.<br>
 
 
+![image](https://user-images.githubusercontent.com/67342876/169347233-209f9459-4bbd-433a-b5a4-d68cd775f251.png)
 
 Først må vi kopiere prosjektet
 
+![image](https://user-images.githubusercontent.com/67342876/169347430-26fd794d-7424-4e37-a767-cff6380b7b00.png)
+    
+Deretter "connect". Her får vi tildelt ei datamaskin frå Google. Vi får låne maskina i ei kort periode.
 
-Deretter "connect". Her får vi tildelt ei maskin frå Google. Vi får låne maskina i ei kort periode.
-
+![image](https://user-images.githubusercontent.com/67342876/169347506-08f5afb6-2472-4e67-8edc-8d5520727306.png)
 
 Så følger ein stega nedover og trykker på "spel av knappen".
 
-Når ein kjem til "steg[4]" så skal ein ta kode snippen frå roboflow, og lime inn i boksen.
+![image](https://user-images.githubusercontent.com/67342876/169347937-cdcd2bda-5f85-4c00-aae7-43ebfea9e6e8.png)
+    
+Når ein kjem til "steg[4]" så skal ein ta kode snippen vi fekk frå roboflow, og lime inn i boksen.
 
 Så følger ein stega nedover igjen
+    
+![image](https://user-images.githubusercontent.com/67342876/169348039-8b62cc18-f9be-4c8f-be9e-e0325eebe363.png)
 
 Til slutt skal du få ei ".pt" fil. Det er altså modellen du har trent.
 </p>
@@ -137,7 +147,7 @@ Her er argumentet <i>"--offset 15"</i> det vil seie at variabelen <i>offset</i> 
 <br>
 Du kan også kombinere fleire argument:
 
-> detect.py --offset 15 --conf-thres 0.7 --time-boundaries 14 18
+> detect.py --offset 15 --conf-thres 0.7 --time-boundaries 14 18<br>
 > detect.py `<argument1>` `<argument2>` `<argument3>`
 
 </p>
