@@ -43,6 +43,8 @@ For dette prosjektet brukar eg følgjande hardware for FiskAI:<br>
 Fila <a href="https://github.com/ultralytics/yolov5/blob/master/detect.py" target="_blank">"detect.py"</a> er frå <i>Ultralytics</i>. Personleg prøvar eg å følge <a href="https://peps.python.org/pep-0008/" target="_blank">PEP 8 Style Guide</a> for Python når eg programmerar, men eg følger ikkje alle reglar som er oppgitt.
 </p>
 
+<br>
+
 <h3>Kommandolinje argument</h3>
 <p>
 Kommandolinje argument er brukar spesifiserte parameter/variablar som ein kan ta inn i sjølve programmet.<br>
@@ -55,7 +57,13 @@ Mine personlege argument har standard verdien <i>-1</i> om brukaren ikkje sender
 
 <p>
 Her er argumentet <i>"--offset 15"</i> det vil seie at variabelen <i>offset</i> fekk verdien <i>15</i><br>
-<i>"--offset 15"</i> er då eit eksempel på eit kommandolinje argument.
+<i>"--offset 15"</i> er då eit eksempel på eit kommandolinje argument.<br>
+<br>
+Du kan også kombinere fleire argument:
+
+> detect.py --offset 15 --conf-thres 0.7 --time-boundaries 14 18
+> detect.py `<argument1>` `<argument2>` `<argument3>`
+
 </p>
 
 <br>
@@ -196,11 +204,22 @@ Kvar av dei funksjonane er med på å gjere lagringsprosessen dynamisk, og sjekk
 ![image](https://user-images.githubusercontent.com/67342876/169122990-f7491d3d-641f-4634-84e5-db07be286357.png)
 <h6>Fig. 9.5.1. annotated_picture_renaming() funksjonen.</h6>
 <p>
-Funksjonen lagar namn på annotert bilete utifrå namnet på det originale ikkje annoterte bilete.<br>
+Funksjonen lagar namn på annotert bilete utifrå namnet på det originale bilete/frame.<br>
 Annoterte bilete skal ha samme namn som originale bilete berre med suffix "_.jpg".<br>
 <br>
 <b>Eksempel filnamn:</b><br>
 <code>syd4k__2020-08-01__10-45-01.mp4_13700.jpg</code> --> <code>syd4k__2020-08-01__10-45-01.mp4_13700_.jpg</code>
+
+<br>
+Det stod spesifisert i oppgåva at ein kunne bruke <code>replace()</code> funksjonen.<br>
+Men problemt då var at filnamnet:<br>
+<code>syd4k__2020-08-01__10-45-01.mp4_13700.jpg</code> --> <code>syd4k__2020-08-01__10-45-01_mp4_13700_jpg</code>
+<br>
+Som då vil seie at annotert bilete ikkje får riktig namn.<br>
+Vi skulle ha suffixen <code>"_.jpg"</code> ikkje <code>"_jpg"</code><br>
+<br>
+Derfor må vi heller splitte opp strengen med suffixen til strengen.<br>
+Deretter tar vi første elementet frå <code>split()</code> funksjonen og legger på <code>"_.jpg"</code> på enden av strengen.
 
 </p>
 
