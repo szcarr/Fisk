@@ -94,10 +94,19 @@ Så følger ein stega nedover og trykker på "spel av knappen".
 
 Når ein kjem til "steg[4]" så skal ein ta kode snippen frå roboflow, og lime inn i boksen.
 
+Så følger ein stega nedover igjen
+
+Til slutt skal du få ei ".pt" fil. Det er altså modellen du har trent.
 </p>
 
 <h2>Docker/NVIDIA Docker</h2>
-<p> </p>
+<p>
+NVIDIA-docker tilbyr ein konteiner med dei nødvendige komponentane for å eksekvere kode på ein GPU.<br>
+Det er berre nødvendig å bruke NVIDIA-docker for å køyre eit program på ein GPU.<br>
+<br>
+For at NVIDIA-docker skal fungere riktig må vi ha riktig drivar for GPU-en.<br>
+
+</p>
 
 <h2>YOLOv5</h2>
 <p>
@@ -337,12 +346,11 @@ Vi brukar <i>pascal_voc_writer</i> til å formattere og lage xml fila.<br>
 </p>
 
 <h2>Kjelder</h2>
-
-<h3>Kva er docker?</h3>
+<h3>NVIDIA docker.</h3>
 <p>
-https://docs.nvidia.com/deeplearning/frameworks/user-guide/index.html
+Olson, R. Calmels, J. Abecassis, F. Rogers, P. (2022, 19. Mai). NVIDIA Docker: GPU Server Application Deployment Made Easy. NVIDIA.<br>
+https://developer.nvidia.com/blog/nvidia-docker-gpu-server-application-deployment-made-easy/
 </p>
-
 <h3>Kva er YOLOv5?</h3>
 <p>
 Jocher, G. (2022, 17. Mai). What is YOLOv5. Ultralytics.<br>
