@@ -292,14 +292,14 @@ Funksjonen splittar <code>img_string</code> til vi får Klokketimen frå strenge
 <code>minimum_tid</code> og <code>maximum_tid</code> er det som blir spesifisert frå kommandolinje argumentet <i>--time-boundaries</i>:<br>
 <br>
 
-> python detect.py --time-boundaries 7 22
-> python detect.py --time-boundaries `<minimum_tid> <maximum_tid>`
-
+> python detect.py --time-boundaries 7 22<br>
+> python detect.py --time-boundaries `<minimum_tid> <maximum_tid>`<br
+<br>
 
 <b>Eksempel:</b>
 <br>
 <code>syd4k__2020-08-01__10-45-01.mp4_13700.jpg</code> -> <code>syd4k__2020-08-01__**-45-01.mp4_13700.jpg</code><br>
-<br>¨¨
+<br>
 <code>**</code> frå filstrengen i eksempelet ovanfor er det vi vi skal hente ut frå strengen, dette er då klokketimen. Funksjonen får tak i den verdien dynamisk, ved å splitte strengen etter <code>__</code>.
 Deretter tar vi det andre elementet vi får frå lista av <code>split()</code>. Då har vi strengen: <code>10-45-01.mp4_13700.jpg</code> Til slutt splittar vi strengen igjen etter <code>-</code>. Indeks null er då <code>klokketime</code>. Så konverterar vi strengen til <code>int</code>.<br>
 <br>
