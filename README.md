@@ -379,11 +379,11 @@ Denne funksjonen kan endrast med å ha eit parameter til, som seier om brukaren 
     <li><code>antall_deteksjonar <= ønska_antall_deteksjonar</code></li>
 </ul>
 <br>
-<b>Mitt forslag:</b>
+<b>Mitt forslag:</b><br>
 <br>
 
-> python detect.py --detection-amount 4 >
-> python detect.py --detection-amount `<ønskt_antall_deteksjonar> <operasjon>`
+> python detect.py --detection-amount 4 ><br>
+> python detect.py --detection-amount `<ønskt_antall_deteksjonar> <operasjon>`<br>
 
 Funksjonen returnerar då <code>True</code> viss <code>detection_amount > antall_deteksjonar</code>.<br>
 Med å gjere dette får programmet meir fleksibilitet.<br>
