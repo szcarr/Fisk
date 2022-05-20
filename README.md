@@ -260,10 +260,10 @@ Kvar av dei funksjonane er med på å gjere lagringsprosessen dynamisk, og sjekk
 <h6>Fig. 10.1.1. check_if_bounding_box_is_large_enough() funksjonen.</h6>
 
 <p>
-Sjekkar om boundingboksen som vart teikna er større eller lik <code>percent</code>. <code>percent</code> blir spesifisert som kommandolinje argument:<br>
+Sjekkar om den totale størrelsen til boundingboksen i pixlar er større eller lik <code>percent</code> av totale antall pixlar på bilete. <code>percent</code> blir spesifisert som kommandolinje argument:<br>
 
-> python detect.py --weights model/test/NilsV1.pt --source model/test/images --bounding-box-size 20.0
-> python detect.py --weights model/test/NilsV1.pt --source model/test/images --bounding-box-size `<percent>`
+> python detect.py --weights model/test/NilsV1.pt --source model/test/images --bounding-box-size 20.0<br>
+> python detect.py --weights model/test/NilsV1.pt --source model/test/images --bounding-box-size `<percent>`<br
 
 </p>
 </h4><b>check_if_bounding_box_position_is_legal():</b></h4>
