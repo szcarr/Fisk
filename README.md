@@ -133,13 +133,14 @@ For at NVIDIA-docker skal fungere riktig må vi ha riktig drivar for GPU-en.<br>
 
 <h2>Programmet</h2>
 <p>
-Fila <a href="https://github.com/ultralytics/yolov5/blob/master/detect.py" target="_blank">"detect.py"</a> er frå <i>Ultralytics</i>. Personleg prøvar eg å følge <a href="https://peps.python.org/pep-0008/" target="_blank">PEP 8 Style Guide</a> for Python når eg programmerar, men eg følger ikkje alle reglar som er oppgitt.
+Fila <a href="https://github.com/ultralytics/yolov5/blob/master/detect.py" target="_blank">"detect.py"</a> er frå <i>Ultralytics</i>. Personleg prøvar eg å følge <a href="https://peps.python.org/pep-0008/" target="_blank">PEP 8 Style Guide</a> for Python når eg programmerar, men eg følger ikkje alle reglar som er oppgitt. Mine personlege argument har standard verdien <i>-1</i> om brukaren ikkje sender inn argument for den variabelen. Med å ha standard verdien <i>-1</i> kan kvar av ein av funksjonane som sjekkar for kriterier returnere <code>True</code>. Visst brukaren ikkje spesifiserar argument for den variabelen.<br>
+<br>
+Det vil då seie at kvar av mine egendefinerte argument er valgfrie. Programmet fungerar heilt fint utan å spesifisere nokon av mine argument. Vanlegvis jo meir filter, og jo strengare reglar på filtra, desto mindre bilder/videoar som går igjennom.
 </p>
 <br>
 <h3>Kommandolinje argument</h3>
 <p>
 Kommandolinje argument er brukar spesifiserte parameter/variablar som ein kan ta inn i sjølve programmet.<br>
-Mine personlege argument har standard verdien <i>-1</i> om brukaren ikkje sender inn argument for den variabelen.
 </p>
 
 > detect.py --offset 15<br>
@@ -270,23 +271,31 @@ Kvar av dei funksjonane er med på å gjere lagringsprosessen dynamisk, og sjekk
 </p>
 
 </h4><b>check_if_only_x_amount_of_detection():</b></h4>
+<br>
 
 ![image](https://user-images.githubusercontent.com/67342876/169122843-93ead6a3-a9e8-44ea-86ca-227cb95874ab.png)
 <h6>Fig. 10.3.1. check_if_only_x_amount_of_detection() funksjonen.</h6>
 
 <p>
-Super lett funksjon som sjekkar om <code>antall_deteksjonar_paa_bilete == ønska_antall_deteksjonar</code>. Om det logiske uttrykket er sant returnerar funksjonen <code>True</code>.
-Visst ikkje returnerar den <code>False</code>
+Super lett funksjon som sjekkar om <code>antall_deteksjonar_paa_bilete == onska_antall_deteksjonar</code>. Om det logiske uttrykket er sant returnerar funksjonen <code>True</code>.
+Visst ikkje returnerar den <code>False</code>.
 <br>
-Om brukaren ikkje har spesifisert <code>ønska_antall_deteksjonar</code>. Då er verdien til <code>wanted_amount_of_detections = -1</code>. Som også returnerar <code>True</code>.
+Om brukaren ikkje har spesifisert <code>onska_antall_deteksjonar</code>. Då er verdien til <code>wanted_amount_of_detections = -1</code>. Som også returnerar <code>True</code>.
 </p>
 
 </h4><b>check_if_time_is_within_bounds():</b></h4>
 
 ![image](https://user-images.githubusercontent.com/67342876/169123582-147df78b-ae95-48a5-97d7-0e8d28ba4fbf.png)
-
-
+<h6>Fig. 10.4.1. check_if_time_is_within_bounds() funksjonen.</h6>
 <p>
+Funksjonen splittar <code>img_string</code> til vi får Klokketimen frå strengen.
+<br>
+<b>Eksempel:</b>
+<br>
+<code>syd4k__2020-08-01__10-45-01.mp4_13700.jpg</code> -> <code>syd4k__2020-08-01__**-45-01.mp4_13700.jpg</code>
+<br>
+<code>**</code> frå filstrengen i eksempelet ovanfor er det vi vi skal hente ut frå strengen. Funksjonen får tak i den verdien dynamisk, ved å splitte strengen.
+Funksjonen forventar eit viss mønster i <code>img_string</code>. Visst ikkje fungerar funksjonen ikkje skikkeleg.
 
 </p>
 
