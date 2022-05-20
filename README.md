@@ -293,7 +293,7 @@ Funksjonen splittar <code>img_string</code> til vi får Klokketimen frå strenge
 <br>
 
 > python detect.py --time-boundaries 7 22<br>
-> python detect.py --time-boundaries `<minimum_tid> <maximum_tid>`<br
+> python detect.py --time-boundaries `<minimum_tid> <maximum_tid>`<br>
 <br>
 
 <b>Eksempel:</b>
@@ -306,7 +306,7 @@ Deretter tar vi det andre elementet vi får frå lista av <code>split()</code>. 
 Vi sjekkar om <code>klokketime</code> er utanfor tidsramma. Visst <code>klokketime</code> er mindre enn <code>minimum_tid</code> eller <code>klokketime</code> er større enn <code>maximum_tid</code>. Då er tida utanfor tidsramma og då returnerar funksjonen <code>False</code>. Ellers returnerar den <code>True</code>.<br>
 <br>
 Funksjonen forventar eit viss mønster i <code>img_string</code>. Visst ikkje fungerar funksjonen ikkje skikkeleg.<br>
-<b>Forventa mønster:</b> <code>*__*__HH-*</code>
+<b>Forventa mønster:</b>  <code>*__*__HH-*</code>
 
 <br>
 
