@@ -298,15 +298,18 @@ Funksjonen splittar <code>img_string</code> til vi får Klokketimen frå strenge
 
 <b>Eksempel:</b>
 <br>
-<code>syd4k__2020-08-01__10-45-01.mp4_13700.jpg</code> -> <code>syd4k__2020-08-01__**-45-01.mp4_13700.jpg</code><br>
+`syd4k__2020-08-01__10-45-01.mp4_13700.jpg` -> `syd4k__2020-08-01__**-45-01.mp4_13700.jpg`<br>
 <br>
-<code>**</code> frå filstrengen i eksempelet ovanfor er det vi vi skal hente ut frå strengen, dette er då klokketimen. Funksjonen får tak i den verdien dynamisk, ved å splitte strengen etter <code>__</code>.
+
+`**` frå filstrengen i eksempelet ovanfor er det vi vi skal hente ut frå strengen, dette er då klokketimen. Funksjonen får tak i den verdien dynamisk, ved å splitte strengen etter `__`.
 Deretter tar vi det andre elementet vi får frå lista av <code>split()</code>. Då har vi strengen: <code>10-45-01.mp4_13700.jpg</code> Til slutt splittar vi strengen igjen etter <code>-</code>. Indeks null er då <code>klokketime</code>. Så konverterar vi strengen til <code>int</code>.<br>
 <br>
 Vi sjekkar om <code>klokketime</code> er utanfor tidsramma. Visst <code>klokketime</code> er mindre enn <code>minimum_tid</code> eller <code>klokketime</code> er større enn <code>maximum_tid</code>. Då er tida utanfor tidsramma og då returnerar funksjonen <code>False</code>. Ellers returnerar den <code>True</code>.<br>
 <br>
 Funksjonen forventar eit viss mønster i <code>img_string</code>. Visst ikkje fungerar funksjonen ikkje skikkeleg.<br>
-<b>Forventa mønster:</b>  <code>*__*__HH-*</code>
+<b>Forventa mønster:</b> 
+
+`*__*__HH-*`
 
 <br>
 
