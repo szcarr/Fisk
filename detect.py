@@ -450,7 +450,7 @@ def check_if_time_is_within_bounds(img_string, min_time, max_time):
 
     img_string = str(img_string)
     splitlst = img_string.split("__")
-    time = splitlst[2].split(".mp4")[0].split("-")
+    time = splitlst[2].split("-")
     hour = int(time[0])
     if hour < min_time or hour > max_time:
         return False
