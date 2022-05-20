@@ -274,7 +274,7 @@ Kvar av dei funksjonane er med på å gjere lagringsprosessen dynamisk, og sjekk
 <h6>Fig. 10.3.1. check_if_only_x_amount_of_detection() funksjonen.</h6>
 
 <p>
-Super lett funksjon som sjekkar om <code>antall_deteksjonar_paa_bilete == onska_antall_deteksjonar</code>. Om det logiske uttrykket er sant returnerar funksjonen <code>True</code>.
+Superlett funksjon som sjekkar om <code>antall_deteksjonar_paa_bilete == onska_antall_deteksjonar</code>. Om det logiske uttrykket er sant returnerar funksjonen <code>True</code>.
 Visst ikkje returnerar den <code>False</code>.
 <br>
 Om brukaren ikkje har spesifisert <code>onska_antall_deteksjonar</code>. Då er verdien til <code>wanted_amount_of_detections = -1</code>. Som også returnerar <code>True</code>.
