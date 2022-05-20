@@ -49,6 +49,7 @@ Disse reglane kjem sjølvsagt an på kva du personleg prøvar å trene.<br>
 > pip3 install labelImg<br>
 <br>
 <b>For å køyre:</b><br>
+
 > labelImg
 
 </p>
@@ -276,7 +277,7 @@ Kvar av dei funksjonane er med på å gjere lagringsprosessen dynamisk, og sjekk
 
 
 <p>
-
+Super lett funksjon
 </p>
 
 </h4><b>check_if_time_is_within_bounds():</b></h4>
@@ -363,11 +364,28 @@ Vi brukar <i>pascal_voc_writer</i> til å formattere og lage xml fila.<br>
 <p>
 </p>
 <h3>-detection-amount</h3>
-<p></p>
+<p>
+Eit av problema med <i>-detection-amount</i> er at den returnerar <code>True</code> berre viss <code>antall_deteksjonar == detection_amount</code>.<br>
+Men ka om vi vil ha alle bilete som har meir enn 4 deteksjonar?<br>
+Til no så går ikkje det.<br>
+<br>
+Denne funksjonen kan endrast med å ha eit parameter til, som seier om brukaren ønskar å:<br>
+<ul>
+    <li><code>antall_deteksjonar > ønska_antall_deteksjonar</code></li>
+    <li><code>antall_deteksjonar >= ønska_antall_deteksjonar</code></li>
+    <li><code>antall_deteksjonar == ønska_antall_deteksjonar</code></li>
+    <li><code>antall_deteksjonar != ønska_antall_deteksjonar</code></li>
+    <li><code>antall_deteksjonar < ønska_antall_deteksjonar</code></li>
+    <li><code>antall_deteksjonar <= ønska_antall_deteksjonar</code></li>
+</ul>
+<br>
+<b>Mitt forslag:</b>
 
+> python detect.py --detection-amount 4 >
 
-
-
+Funksjonen returnerar då <code>True</code> viss <code>detection_amount > antall_deteksjonar</code>.<br>
+Med å gjere dette får programmet meir fleksibilitet.<br>
+</p>
 
 <h2>Kjelder</h2>
 <h3>NVIDIA docker.</h3>
