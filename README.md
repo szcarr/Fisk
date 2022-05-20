@@ -154,11 +154,8 @@ Du kan også kombinere fleire argument:
 
 > detect.py --offset 15 --conf-thres 0.7 --time-boundaries 14 18<br>
 > detect.py `<argument1>` `<argument2>` `<argument3>`
-
 </p>
-
 <br>
-
 <h3>-offset</h3>
 <p>
 Seier kor bounding box må ligge i forhold til kantane på skjermen.
@@ -288,14 +285,18 @@ Om brukaren ikkje har spesifisert <code>onska_antall_deteksjonar</code>. Då er 
 ![image](https://user-images.githubusercontent.com/67342876/169123582-147df78b-ae95-48a5-97d7-0e8d28ba4fbf.png)
 <h6>Fig. 10.4.1. check_if_time_is_within_bounds() funksjonen.</h6>
 <p>
-Funksjonen splittar <code>img_string</code> til vi får Klokketimen frå strengen.
+Funksjonen splittar <code>img_string</code> til vi får Klokketimen frå strengen. Deretter sjekkar om klokka er innanfor/utanfor tidsramma.
 <br>
 <b>Eksempel:</b>
 <br>
-<code>syd4k__2020-08-01__10-45-01.mp4_13700.jpg</code> -> <code>syd4k__2020-08-01__**-45-01.mp4_13700.jpg</code>
+<code>syd4k__2020-08-01__10-45-01.mp4_13700.jpg</code> -> <code>syd4k__2020-08-01__**-45-01.mp4_13700.jpg</code><br>
 <br>
-<code>**</code> frå filstrengen i eksempelet ovanfor er det vi vi skal hente ut frå strengen. Funksjonen får tak i den verdien dynamisk, ved å splitte strengen.
+<code>**</code> frå filstrengen i eksempelet ovanfor er det vi vi skal hente ut frå strengen, dette er då klokketimen. Funksjonen får tak i den verdien dynamisk, ved å splitte strengen etter <code>__</code>.
+Deretter tar vi det andre elementet vi får frå lista av <code>split()</code>. Då har vi strengen: <code>10-45-01.mp4_13700.jpg</code> Til slutt splittar vi strengen igjen etter <code>-</code>. Indeks null er då <code>klokketime</code>. Så konverterar vi strengen til <code>int</code>.
+<br>
+Vi sjekkar om <code>klokketime</code> er utanfor tidsramma. Visst <code>klokketime</code> er mindre enn <code>minimum_tid</code> eller <code>klokketime</code> er større enn <code>maximum_tid</code>. Då er tida utanfor tidsramma. Så returnerar funksjonen <code>False</code>. Ellers returnerar den <code>True</code>.
 Funksjonen forventar eit viss mønster i <code>img_string</code>. Visst ikkje fungerar funksjonen ikkje skikkeleg.
+<br>
 
 </p>
 
