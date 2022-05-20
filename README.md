@@ -380,8 +380,10 @@ Denne funksjonen kan endrast med å ha eit parameter til, som seier om brukaren 
 </ul>
 <br>
 <b>Mitt forslag:</b>
+<br>
 
 > python detect.py --detection-amount 4 >
+> python detect.py --detection-amount `<ønskt_antall_deteksjonar> <operasjon>`
 
 Funksjonen returnerar då <code>True</code> viss <code>detection_amount > antall_deteksjonar</code>.<br>
 Med å gjere dette får programmet meir fleksibilitet.<br>
