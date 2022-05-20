@@ -253,10 +253,17 @@ Kvar av dei funksjonane er med på å gjere lagringsprosessen dynamisk, og sjekk
 </p>
 
 </h4><b>check_if_bounding_box_is_large_enough():</b></h4>
+<br>
+<br>
 
 ![image](https://user-images.githubusercontent.com/67342876/169122414-5105c14e-525a-4bfb-880a-d7efd1c9444f.png)
+<h6>Fig. 10.1.1. check_if_bounding_box_is_large_enough() funksjonen.</h6>
 
 <p>
+Sjekkar om boundingboksen som vart teikna er større eller lik <code>percent</code>. <code>percent</code> blir spesifisert som kommandolinje argument:<br>
+
+> python detect.py --weights model/test/NilsV1.pt --source model/test/images --bounding-box-size 20.0
+> python detect.py --weights model/test/NilsV1.pt --source model/test/images --bounding-box-size `<percent>`
 
 </p>
 </h4><b>check_if_bounding_box_position_is_legal():</b></h4>
@@ -298,7 +305,9 @@ Funksjonen splittar <code>img_string</code> til vi får Klokketimen frå strenge
 <br>
 <b>Eksempel:</b>
 <br>
+
 `syd4k__2020-08-01__10-45-01.mp4_13700.jpg` -> `syd4k__2020-08-01__**-45-01.mp4_13700.jpg`<br>
+
 <br>
 
 `**` frå filstrengen i eksempelet ovanfor er det vi vi skal hente ut frå strengen, dette er då klokketimen. Funksjonen får tak i den verdien dynamisk, ved å splitte strengen etter `__`.
@@ -311,6 +320,7 @@ Funksjonen forventar eit viss mønster i <code>img_string</code>. Visst ikkje fu
 <b>Forventa mønster:</b> 
 
 `*__*__HH-*`
+
 
 <br>
 
