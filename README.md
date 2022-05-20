@@ -282,7 +282,7 @@ Om brukaren ikkje har spesifisert <code>onska_antall_deteksjonar</code>. Då er 
 
 </h4><b>check_if_time_is_within_bounds():</b></h4>
 
-![image](https://user-images.githubusercontent.com/67342876/169123582-147df78b-ae95-48a5-97d7-0e8d28ba4fbf.png)
+![image](https://user-images.githubusercontent.com/67342876/169614576-0277990a-c431-418c-a39b-df39e01b482f.png)
 <h6>Fig. 10.4.1. check_if_time_is_within_bounds() funksjonen.</h6>
 <p>
 Funksjonen splittar <code>img_string</code> til vi får Klokketimen frå strengen. Deretter sjekkar om klokka er innanfor/utanfor tidsramma.
