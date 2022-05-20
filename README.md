@@ -269,6 +269,7 @@ Kvar av dei funksjonane er med på å gjere lagringsprosessen dynamisk, og sjekk
 
 </h4><b>check_if_only_x_amount_of_detection():</b></h4>
 <br>
+<br>
 
 ![image](https://user-images.githubusercontent.com/67342876/169122843-93ead6a3-a9e8-44ea-86ca-227cb95874ab.png)
 <h6>Fig. 10.3.1. check_if_only_x_amount_of_detection() funksjonen.</h6>
@@ -281,16 +282,24 @@ Om brukaren ikkje har spesifisert <code>onska_antall_deteksjonar</code>. Då er 
 </p>
 
 </h4><b>check_if_time_is_within_bounds():</b></h4>
+<br>
+<br>
 
 ![image](https://user-images.githubusercontent.com/67342876/169614576-0277990a-c431-418c-a39b-df39e01b482f.png)
 <h6>Fig. 10.4.1. check_if_time_is_within_bounds() funksjonen.</h6>
 <p>
-Funksjonen splittar <code>img_string</code> til vi får Klokketimen frå strengen. Deretter sjekkar om klokka er innanfor/utanfor tidsramma.
+Funksjonen splittar <code>img_string</code> til vi får Klokketimen frå strengen. Deretter sjekkar om klokka er innanfor/utanfor tidsramma.<br>
+<code>minimum_tid</code> og <code>maximum_tid</code> er det som blir spesifisert frå kommandolinje argumentet <i>--time-boundaries</i>:<br>
 <br>
+
+> python detect.py --time-boundaries 7 22
+> python detect.py --time-boundaries `<minimum_tid> <maximum_tid>`
+
+
 <b>Eksempel:</b>
 <br>
 <code>syd4k__2020-08-01__10-45-01.mp4_13700.jpg</code> -> <code>syd4k__2020-08-01__**-45-01.mp4_13700.jpg</code><br>
-<br>
+<br>¨¨
 <code>**</code> frå filstrengen i eksempelet ovanfor er det vi vi skal hente ut frå strengen, dette er då klokketimen. Funksjonen får tak i den verdien dynamisk, ved å splitte strengen etter <code>__</code>.
 Deretter tar vi det andre elementet vi får frå lista av <code>split()</code>. Då har vi strengen: <code>10-45-01.mp4_13700.jpg</code> Til slutt splittar vi strengen igjen etter <code>-</code>. Indeks null er då <code>klokketime</code>. Så konverterar vi strengen til <code>int</code>.<br>
 <br>
@@ -341,7 +350,7 @@ Eit av problema eg hadde med å ta inn klokkeslett var at visst brukaren spesifi
 </p>
 <br>
 
-> python3 detect.py --time-boundaries 7 22
+> python detect.py --time-boundaries 7 22
 
 <br>
 <p>
