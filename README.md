@@ -2,7 +2,8 @@
 
 <h2>Introduksjon</h2>
 <p>
-I dette dokumentet kjem eg til å prate om mine endringar i “detect.py” fila, og forklaringar på dei. Eg listar også opp hardware om ein har lyst og replikere prosjektet. Her er også ein "guide" for korleis ein sjølv kan trene nye egendefinerte modellar.
+I dette dokumentet kjem eg til å prate om mine endringar i “detect.py” fila, og forklaringar på dei. Eg listar også opp hardware om ein har lyst og replikere prosjektet. Her er også ein "guide" for korleis ein sjølv kan trene nye egendefinerte modellar.<br>
+I slutten av dokumentet kjem eg til å prate om potensielle forbetringar i programmet, og/eller endringar. 
 </p>
 
 <h2>Hardware</h2>
@@ -105,7 +106,7 @@ Så følger ein stega nedover og trykker på "spel av knappen".
 <h6>Fig. 6.4. Roboflow kode snipp.</h6>
 
     
-Når ein kjem til "steg[4]" så skal ein ta kode snippen vi fekk frå roboflow, og lime inn i boksen.<br>
+Når ein kjem til "steg[5]" så skal ein ta kode snippen vi fekk frå roboflow, og lime inn i boksen.<br>
 Så følger ein stega nedover igjen.
     
 ![image](https://user-images.githubusercontent.com/67342876/169348039-8b62cc18-f9be-4c8f-be9e-e0325eebe363.png)
@@ -120,7 +121,6 @@ NVIDIA-docker tilbyr ein konteiner med dei nødvendige komponentane for å eksek
 Det er berre nødvendig å bruke NVIDIA-docker for å køyre eit program på ein GPU.<br>
 <br>
 For at NVIDIA-docker skal fungere riktig må vi ha riktig drivar for GPU-en.<br>
-
 </p>
 
 <h2>YOLOv5</h2>
@@ -358,6 +358,16 @@ Vi brukar <i>pascal_voc_writer</i> til å formattere og lage xml fila.<br>
 <h3>Ekstra</h3>
 <p>
 </p>
+
+<h2>Diskusjon</h2>
+<p>
+</p>
+<h3>-detection-amount</h3>
+<p></p>
+
+
+
+
 
 <h2>Kjelder</h2>
 <h3>NVIDIA docker.</h3>
