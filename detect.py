@@ -257,7 +257,7 @@ def run(
                                     label_name, x1, y1, x2, y2, savename, save_dir)
 
                             # Copying original picture without annotation
-                            command = f"cp {os.path.join(source, savename)} {save_dir}"
+                            command = f"cp {os.path.join(source, savename)} {save_dir}" # kan også bruke cv2.imwrite(save_path, im0s)
                             os.system(command)
 
                         else:  # 'video' or 'stream'
