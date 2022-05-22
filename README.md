@@ -307,18 +307,13 @@ Om <code>Y</code> verdien til <code>XY*</code> er mellom den <code>kvite</code> 
 ![image](https://user-images.githubusercontent.com/67342876/169707687-5905ae07-9270-46c5-b5b3-306820fa401e.png)
 
 <h6>Fig. 10.2.3. Gyldig boundingbox.</h6>
-I dette tilfelle er begge posisjonane til boundingboxen godkjent.
+I dette tilfelle er begge posisjonane til boundingboxen godkjent.<br>
 
 ![image](https://user-images.githubusercontent.com/67342876/169707728-a9cc5b33-1bd8-465d-8456-e9f901a4c20f.png)
 
 <h6>Fig. 10.2.4. Ugyldig boundingbox.</h6>
-<br>
 Derimot dette tilfelle er det ikkje godkjent, fordi:<br>
 Både <code>X</code> og <code>Y</code> verdien til <code>XY1</code> er i offset område som gjer posisjon ugyldig.
-
-
-
-
 </p>
 
 </h4><b>check_if_only_x_amount_of_detection():</b></h4>
@@ -446,12 +441,13 @@ Vi brukar <i>pascal_voc_writer</i> til å formattere og lage xml fila.<br>
 
 <h2>Diskusjon</h2>
 <p>
+Her er mine forslag og eventuelle endringar eg kunne ønskt å ha gjort om vi hadde hatt meir tid.
 </p>
 <h3>-detection-amount</h3>
 <p>
 Eit av problema med <i>-detection-amount</i> er at den returnerar <code>True</code> berre viss <code>antall_deteksjonar == detection_amount</code>.<br>
 Men ka om vi vil ha alle bilete som har meir enn 4 deteksjonar?<br>
-Til no så går ikkje det.<br>
+Med denne versjonen av programmet så går ikkje det an å registrere <code> > 4</code>.<br>
 <br>
 Denne funksjonen kan endrast med å ha eit parameter til, som seier om brukaren ønskar å:<br>
 <ul>
@@ -472,6 +468,20 @@ Denne funksjonen kan endrast med å ha eit parameter til, som seier om brukaren 
 Funksjonen returnerar då <code>True</code> viss <code>detection_amount > antall_deteksjonar</code>.<br>
 Med å gjere dette får programmet meir fleksibilitet.<br>
 </p>
+
+<h3>-offset</h3>
+<p>
+Ein av endringane eg kan tenke på å gjere her, er å la brukaren kunne spesifisere sin eigen offset for kvar av kantane til skjermen. På den måten kan brukaren "teikne" sitt eige gyldige området.
+
+> python detect.py --offset 50 2 2 70
+> python detect.py --offset `nord` `aust` `sør` `vest`
+
+Korleis eg trur boksen hadde sett ut:
+
+![image](https://user-images.githubusercontent.com/67342876/169709159-2fbf9d25-2326-4ccf-b543-aa97556d8056.png)
+
+</p>
+
 
 <h2>Kjelder</h2>
 <h3>NVIDIA docker.</h3>
