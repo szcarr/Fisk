@@ -67,12 +67,10 @@ Disse reglane kjem sjølvsagt an på kva du personleg prøvar å trene.<br>
 
 ![Screenshot from 2022-05-19 13-59-56](https://user-images.githubusercontent.com/67342876/169288456-3f369b34-b540-46c5-ae16-aa83036f7505.png)
 <h6>Fig. 4.2. Dårleg annotert bilete frå labelImg.</h6>
-<br>
 
 > pip3 install labelImg<br>
 
 <b>For å køyre:</b><br>
-<br>
 
 > labelImg
 
