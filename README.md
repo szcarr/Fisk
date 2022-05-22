@@ -2,7 +2,7 @@
 
 <h2>Introduksjon</h2>
 <p>
-I dette dokumentet kjem eg til å prate om mine endringar i “detect.py” fila, og forklaringar på dei. Eg listar også opp hardware om ein har lyst og replikere prosjektet. Her er også ein "guide" for korleis ein sjølv kan trene nye egendefinerte modellar.<br>
+I dette dokumentet kjem eg til å prate om mine endringar i “detect.py” fila, og forklaringar på dei. Eg listar også opp hardware om ein har lyst og replikere prosjektet. Her er også ein "guide" for korleis ein sjølv kan trene nye egendefinerte modellar.
 I slutten av dokumentet kjem eg til å prate om potensielle forbetringar i programmet, og/eller endringar. 
 </p>
 
