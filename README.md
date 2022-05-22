@@ -431,12 +431,19 @@ Vi brukar <i>pascal_voc_writer</i> til å formattere og lage xml fila.<br>
 ![image](https://user-images.githubusercontent.com/67342876/169100199-4a5960af-bdfe-4bd9-9b43-3b9786bd4c3c.png)
 <h6>Fig. 10.7.2. Biblioteket pascal_voc_writer.</h6>
 
-
-
 > pip install pascal_voc_writer
 
 <h3>Ekstra</h3>
 <p>
+Her er ekstra små ting/endringar eg har gjort i programmet.
+</p>
+<h4>add_argument()</h4>
+<p>
+Har lagt til mine fire kommandolinje argument.
+<br>
+
+![image](https://user-images.githubusercontent.com/67342876/169710005-ec2bfc25-339c-4b9b-bcc8-e5c22babb7bf.png)
+<h6>Fig. 11.1.1. Lagt til eigendefinerte argument.</h6>
 </p>
 
 <h2>Diskusjon</h2>
@@ -473,16 +480,19 @@ Med å gjere dette får programmet meir fleksibilitet.<br>
 <p>
 Ein av endringane eg kan tenke på å gjere her, er å la brukaren kunne spesifisere sin eigen offset for kvar av kantane til skjermen. På den måten kan brukaren "teikne" sitt eige gyldige området.
 
-> python detect.py --offset 50 2 2 70
-> python detect.py --offset `nord` `aust` `sør` `vest`
+> python detect.py --offset 50 2 2 70<br>
+> python detect.py --offset `nord` `aust` `sør` `vest`<br
 
 <b>Korleis boksen hadde sett ut med dei innstillingane:</b>
 <br>
 
 ![image](https://user-images.githubusercontent.com/67342876/169709159-2fbf9d25-2326-4ccf-b543-aa97556d8056.png)
-<h6>Fig. 12.1.1. Brukardefinert offset.</h6>
+<h6>Fig. 12.2.1. Brukardefinert offset.</h6>
 
 ![image](https://user-images.githubusercontent.com/67342876/169709358-df7f39ef-546f-4301-b5b5-81409069a53c.png)
+<h6>Fig. 12.2.2. Brukardefinert offset med gyldig område visualisert.</h6>
+
+Den grøne boksen representerar det gyldig område der boundingbox punkta <code>(XY1, XY2)</code> er valide.
 
 </p>
 
