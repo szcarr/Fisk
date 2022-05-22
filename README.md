@@ -30,19 +30,23 @@ Eg fekk aldri ein "skikkeleg" introduksjon til det vi dreiv på med når vi trik
 
 
 ![oppsett](https://user-images.githubusercontent.com/67342876/169713056-bbe9ed6a-1e14-4f4a-b918-459f8c19eada.jpg)
-
 <h6>Fig. 3.1. Oppsett 1.</h6>
 
 
 ![oppsett2](https://user-images.githubusercontent.com/67342876/169713091-96995cbc-d306-407b-81d9-a33d1ae2c694.jpg)
-
 <h6>Fig. 3.2. Oppsett 2.</h6>
 
 
 Alt såg bra ut heilt til eg var ferdig å trikse på straumforsyninga, og då skulle teste den. Det viste seg då at den straumforsyninga eg fekk utdelt ikkje fungerte.
-Det var jo sjølvsagt veldig dumt av meg å ikkje teste den før eg begynte å mekke på den. Det endte då opp med at eg fekk eit nytt hovedkort og straumforsyning som fungerte.
+Det kan også hende at eg klarte og øydelegge straumforsyninga medan eg dreiv å triksa på den. Her er det uendelig mange ting som kan ha gått gale.
+Det var jo sjølvsagt veldig dumt av meg å ikkje teste den før eg begynte å mekke på den.
+Det endte då opp med at eg fekk eit nytt hovedkort og straumforsyning som fungerte.
 
+![defekt](https://user-images.githubusercontent.com/67342876/169713502-72a28fe1-6801-4349-8ba2-f3e7da1785d9.jpg)
+<h6>Fig. 3.3. Defekt straumforsyning.</h6>
 
+![kobling](https://user-images.githubusercontent.com/67342876/169713523-bf94ed43-cacf-4157-847a-05713a97faae.jpg)
+<h6>Fig. 3.4. Kobling.</h6>
 
 </p>
 
