@@ -72,6 +72,8 @@ Disse reglane kjem sjølvsagt an på kva du personleg prøvar å trene.<br>
 ![Screenshot from 2022-05-19 13-59-56](https://user-images.githubusercontent.com/67342876/169288456-3f369b34-b540-46c5-ae16-aa83036f7505.png)
 <h6>Fig. 4.2. Dårleg annotert bilete frå labelImg.</h6>
 
+<b>For å laste ned labelImg:</b><br>
+
 > pip3 install labelImg<br>
 
 <b>For å køyre:</b><br>
@@ -83,7 +85,7 @@ Disse reglane kjem sjølvsagt an på kva du personleg prøvar å trene.<br>
 <h2>Roboflow</h2>
 <p>
 Roboflow er ei nettside der ein kan laste opp eigne bilder og trene ein modell utifrå dei biletene ein har lasta opp.<br>
-Ein må først lage ein brukar før ein kan lage modellar. Vi skal ikkje trene modellen her, men vi skal ha nedlastings "snippeten" til vårt "dataset".<br>
+Ein må først lage ein brukar før ein kan lage modellar. Vi skal ikkje trene modellen her, men vi skal ha nedlastings "snippeten" til vårt dataset.<br>
 <br>
 
 ![Screenshot from 2022-05-19 14-10-49](https://user-images.githubusercontent.com/67342876/169293974-e5cc5c6e-50df-4391-b9ed-be67aac149e7.png)
@@ -108,7 +110,7 @@ Deretter "Generate" og "Export" i format "YOLO v5 PyTorch".<br>
 Til slutt skal ein få ein snipp av kode som ein skal ta med seg vidare til <a href="https://colab.research.google.com/github/roboflow-ai/yolov5-custom-training-tutorial/blob/main/yolov5-custom-training.ipynb" target="_blank"><i>Google Colab</i></a>.
 </p>
 
-<h2>Colab</h2>
+<h2>Google Colab</h2>
 <p>
 Her skal vi trene ein modell utifrå datasettet vi har fått ifrå Roboflow.<br>
 Vi skal trene vår eigen YOLOv5 modell for å gjenkjenne obekta i frå datasettet.<br>
@@ -173,7 +175,7 @@ Kommandolinje argument er brukar spesifiserte parameter/variablar som ein kan ta
 > detect.py `<argument>`
 
 <p>
-Her er argumentet <i>"--offset 15"</i> det vil seie at variabelen <i>offset</i> fekk verdien <i>15</i><br>
+Her er argumentet <i>"--offset 15"</i> det vil seie at variabelen <i>offset</i> fekk verdien <i>15</i>.<br>
 <i>"--offset 15"</i> er då eit eksempel på eit kommandolinje argument.<br>
 <br>
 Du kan også kombinere fleire argument:
@@ -333,6 +335,7 @@ Om <code>Y</code> verdien til <code>XY*</code> er mellom den <code>kvite</code> 
 
 <h6>Fig. 10.2.3. Gyldig boundingbox.</h6>
 I dette tilfelle er begge posisjonane til boundingboxen godkjent.<br>
+<br>
 
 ![image](https://user-images.githubusercontent.com/67342876/169707728-a9cc5b33-1bd8-465d-8456-e9f901a4c20f.png)
 
