@@ -23,6 +23,29 @@ For dette prosjektet brukar eg følgjande hardware for FiskAI:<br>
 <b>Linux kernel versjon:</b> 5.15.0-27-generic
 </p>
 
+<h2>Oppsettet</h2>
+<p>
+Oppsettet består av komponentane som er lista i <i>Hardware</i>. Vi skulle trikse med straumforsyning, så vi fekk forsynt riktig spenning til hovudkortet.
+
+
+![oppsett](https://user-images.githubusercontent.com/67342876/169713056-bbe9ed6a-1e14-4f4a-b918-459f8c19eada.jpg)
+
+<h6>Fig. 3.1. Oppsett 1.</h6>
+
+
+![oppsett2](https://user-images.githubusercontent.com/67342876/169713091-96995cbc-d306-407b-81d9-a33d1ae2c694.jpg)
+
+<h6>Fig. 3.2. Oppsett 2.</h6>
+
+
+Alt såg bra ut heilt til eg var ferdig å trikse på straumforsyninga, og då skulle teste den. Det viste seg då at den straumforsyninga eg fekk utdelt ikkje fungerte.
+Det var jo sjølvsagt veldig dumt av meg å ikkje teste den før eg begynte å mekke på den. Det endte då opp med at eg fekk eit nytt hovedkort og straumforsyning som fungerte.
+
+
+
+
+</p>
+
 <h2>labelImg</h2>
 <p>
 labelImg er eit program som ein kan bruke til å annotere bilete manuelt.<br>
@@ -47,8 +70,9 @@ Disse reglane kjem sjølvsagt an på kva du personleg prøvar å trene.<br>
 <br>
 
 > pip3 install labelImg<br>
-<br>
+
 <b>For å køyre:</b><br>
+<br>
 
 > labelImg
 
@@ -57,7 +81,7 @@ Disse reglane kjem sjølvsagt an på kva du personleg prøvar å trene.<br>
 <h2>Roboflow</h2>
 <p>
 Roboflow er ei nettside der ein kan laste opp eigne bilder og trene ein modell utifrå dei biletene ein har lasta opp.<br>
-Ein må først lage ein brukar før ein kan lage modellar. Vi skal ikkje trene modellen her, men vi skal ha nedlastings "snippeten" til vårt "dataset"<br>
+Ein må først lage ein brukar før ein kan lage modellar. Vi skal ikkje trene modellen her, men vi skal ha nedlastings "snippeten" til vårt "dataset".<br>
 <br>
 
 ![Screenshot from 2022-05-19 14-10-49](https://user-images.githubusercontent.com/67342876/169293974-e5cc5c6e-50df-4391-b9ed-be67aac149e7.png)
@@ -458,7 +482,6 @@ Her er korleis programmet sjekkar og lagrar relevant data.
 </p>
 
 ![image](https://user-images.githubusercontent.com/67342876/169711631-8a2d5837-56ba-42dd-b94f-6045fc097ff7.png)
-
 <h6>Fig. 11.3.1. Kodesnipp.</h6>
 
 <h2>Diskusjon</h2>
