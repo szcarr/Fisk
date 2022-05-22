@@ -498,10 +498,10 @@ Den grøne boksen representerar det gyldig område der boundingbox punkta <code>
 <h3>check_if_time_is_within_bounds()</h3>
 <p>
 Problemet her er at programmet annoterar bilete, også sjekkar han om tida på filnamnet er gyldig. 
-Det vil då seie at programmet har brukt "mykje" ressursar og tid på eit bilete vi veit på førehand ikkje er gyldig.<br>
+Det vil då seie at programmet har brukt "mykje" ressursar, og tid på eit bilete vi veit på førehand ikkje er gyldig.<br>
 
-Eit anna problem som eg har stilt <a href="https://github.com/ultralytics/yolov5/issues/7898" target="_blank">spørsmål</a> om på "YOLOv5 Repositoriet". Er korleis ein hoppe over ein heil video frå datasettet.
-Det som skjer her er at funksjonen sjekkar tida på videoen via strengen. Deretter skippar den ein "frame" når vi veit heile videoen er ugyldig. Derfor for betre optimalisering, og sparing av tid skulle vi ha hoppa over heile videoen. Og ikkje berre ein "frame" til vi har gått igjennom heile videoen.
+Eit anna problem som eg har stilt <a href="https://github.com/ultralytics/yolov5/issues/7898" target="_blank">spørsmål</a> om på "YOLOv5 Repositoriet". Er korleis ein hoppar over ein heil video frå datasettet.
+Det som skjer her er at funksjonen sjekkar tida på videoen via strengen. Deretter skippar den ein "frame" når vi veit heile videoen er ugyldig. For betre optimalisering, og sparing av tid skulle vi ha hoppa over heile videoen. Og ikkje berre ein "frame" til vi har gått igjennom heile videoen.
 </p>
 
 <h2>Kjelder</h2>
