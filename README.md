@@ -245,7 +245,6 @@ Det er også forventa at <code>minimum_tid</code> <= <code>maximum_tid</code>.<b
 > python detect.py --weights model/test/NilsV1.pt --source model/test/images --time-boundaries 7 21<br>
 > python detect.py --weights model/test/NilsV1.pt --source model/test/images --time-boundaries `<minimum_tid> <maximum_tid>`<br>
 
-<br>
 <h3>Funksjonar</h3>
 <p>
 Min del av programmet har sju forskjellige funksjonar. Fire av dei funksjonane er med på å bestemme om bilete skal bli lagra eller ikkje<br>
@@ -365,7 +364,6 @@ Funksjonen forventar eit viss mønster i <code>img_string</code>. Visst ikkje fu
 
 
 <br>
-
 </p>
 
 </h4><b>annotated_picture_renaming():</b></h4>
@@ -437,7 +435,7 @@ Vi brukar <i>pascal_voc_writer</i> til å formattere og lage xml fila.<br>
 <p>
 Her er små ting/endringar eg har gjort i programmet.
 </p>
-<h4>argument parser</h4>
+<h4>argument_parser</h4>
 <p>
 Har lagt til mine fire kommandolinje argument.
 <br>
@@ -445,6 +443,15 @@ Har lagt til mine fire kommandolinje argument.
 ![image](https://user-images.githubusercontent.com/67342876/169710005-ec2bfc25-339c-4b9b-bcc8-e5c22babb7bf.png)
 <h6>Fig. 11.1.1. Lagt til eigendefinerte argument.</h6>
 </p>
+
+<h4>prints</h4>
+<p>
+Eg har lagt til mine eigne prints som printar relevant informasjon.
+</p>
+
+![image](https://user-images.githubusercontent.com/67342876/169711235-f55f1675-4e52-43b2-9523-899d0bec795c.png)
+<h6>Fig. 11.2.1. Mine prints.</h6>
+
 
 <h2>Diskusjon</h2>
 <p>
