@@ -263,10 +263,25 @@ Kvar av dei funksjonane er med på å gjere lagringsprosessen dynamisk, og sjekk
 Sjekkar om den totale størrelsen til boundingboksen i pixlar er større eller lik <code>percent</code> av totale antall pixlar på bilete. <code>percent</code> blir spesifisert som kommandolinje argument:<br>
 
 > python detect.py --weights model/test/NilsV1.pt --source model/test/images --bounding-box-size 20.0<br>
-> python detect.py --weights model/test/NilsV1.pt --source model/test/images --bounding-box-size `<percent>`<br
+> python detect.py --weights model/test/NilsV1.pt --source model/test/images --bounding-box-size `<percent>`<br>
+<br>
 
+<b>Eksempel:</b>
+<br>
+Bilete: 1920 x 1080<br>
+Boundingbox: 400 x 730<br>
+Percent: 20<br>
+<br>
+Totale bilde størrelese: 2 073 600 (1920 * 1080).<br>
+Minimum boundingbox størrelse i pixlar: 414 720 (2 073 600 / 100 * 20).<br>
+Boundingbox størrelse: 292 000 (400 * 730).<br>
+<br>
+Her ser vi at bounding box størrelsen (292 000) er mindre enn minimum størrelsen (414 720). Boundingboxen er ikkje stor nok og bilete er ikkje godkjent.
 </p>
+
 </h4><b>check_if_bounding_box_position_is_legal():</b></h4>
+<br>
+<br>
 
 ![image](https://user-images.githubusercontent.com/67342876/169122638-1b2b0165-59d9-4b59-8327-42cbbe576f37.png)
 
