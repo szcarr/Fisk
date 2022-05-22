@@ -304,8 +304,12 @@ Om <code>X</code> verdien til <code>XY*</code> er mellom den <code>raude</code> 
 Om <code>Y</code> verdien til <code>XY*</code> er mellom den <code>kvite</code> og <code>svarte</code> stipla linja. Er <code>Y</code> verdien til <code>XY*</code> ein godkjent posisjon.<br>
 
 
+![image](https://user-images.githubusercontent.com/67342876/169707687-5905ae07-9270-46c5-b5b3-306820fa401e.png)
+
 <h6>Fig. 10.2.3. Gyldig boundingbox.</h6>
 I dette tilfelle er begge posisjonane til boundingboxen godkjent.
+
+![image](https://user-images.githubusercontent.com/67342876/169707728-a9cc5b33-1bd8-465d-8456-e9f901a4c20f.png)
 
 <h6>Fig. 10.2.4. Ugyldig boundingbox.</h6>
 <br>
