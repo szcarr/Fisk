@@ -276,7 +276,7 @@ Totale bilde størrelese: 2 073 600 (1920 * 1080).<br>
 Minimum boundingbox størrelse i pixlar: 414 720 (2 073 600 / 100 * 20).<br>
 Boundingbox størrelse: 292 000 (400 * 730).<br>
 <br>
-Her ser vi at bounding box størrelsen (292 000) er mindre enn minimum størrelsen (414 720). Boundingboxen er ikkje stor nok og bilete er ikkje godkjent.
+Her ser vi at bounding box størrelsen (292 000) er mindre enn minimum størrelsen (414 720). Boundingboxen er ikkje stor nok, og bilete er ikkje godkjent.
 </p>
 
 </h4><b>check_if_bounding_box_position_is_legal():</b></h4>
@@ -284,8 +284,25 @@ Her ser vi at bounding box størrelsen (292 000) er mindre enn minimum størrels
 <br>
 
 ![image](https://user-images.githubusercontent.com/67342876/169122638-1b2b0165-59d9-4b59-8327-42cbbe576f37.png)
+<h6>Fig. 10.2.1. check_if_bounding_box_position_is_legal() funksjonen.</h6>
 
 <p>
+Funksjonen sjekkar om positionen til boundingboxen er innanfor eit visst område.<br>
+<br>
+<b>Eksempel:</b><br>
+
+![image](https://user-images.githubusercontent.com/67342876/169707153-ce2e1d97-9d5f-441a-95c9-a942611d0f0f.png)
+
+<code>min_width_offset</code> er den <code>raude</code> stipla linja.<br>
+<code>max_width_offset</code> er den <code>lilla</code> stipla linja.<br>
+<br>
+<code>min_height_offset</code> er den <code>kvite</code> stipla linja.<br>
+<code>max_height_offset</code> er den <code>svarte</code> stipla linja.<br>
+<br>
+Om <code>X</code> verdien til <code>XY*</code> er mellom den <code>raude</code> og <code>lilla</code> stipla linja. Er <code>X</code> verdien til <code>XY*</code> ein godkjent posisjon.<br>
+Om <code>Y</code> verdien til <code>XY*</code> er mellom den <code>kvite</code> og <code>svarte</code> stipla linja. Er <code>Y</code> verdien til <code>XY*</code> ein godkjent posisjon.<br>
+
+
 
 </p>
 
@@ -298,7 +315,7 @@ Her ser vi at bounding box størrelsen (292 000) er mindre enn minimum størrels
 
 <p>
 Superlett funksjon som sjekkar om <code>antall_deteksjonar_paa_bilete == onska_antall_deteksjonar</code>. Om det logiske uttrykket er sant returnerar funksjonen <code>True</code>.
-Visst ikkje returnerar den <code>False</code>.
+Visst ikkje returnerar den <code>False</code>.<br>
 <br>
 Om brukaren ikkje har spesifisert <code>onska_antall_deteksjonar</code>. Då er verdien til <code>wanted_amount_of_detections = -1</code>. Som også returnerar <code>True</code>.
 </p>
