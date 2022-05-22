@@ -435,9 +435,9 @@ Vi brukar <i>pascal_voc_writer</i> til å formattere og lage xml fila.<br>
 
 <h3>Ekstra</h3>
 <p>
-Her er ekstra små ting/endringar eg har gjort i programmet.
+Her er små ting/endringar eg har gjort i programmet.
 </p>
-<h4>add_argument()</h4>
+<h4>argument parser</h4>
 <p>
 Har lagt til mine fire kommandolinje argument.
 <br>
@@ -493,9 +493,16 @@ Ein av endringane eg kan tenke på å gjere her, er å la brukaren kunne spesifi
 <h6>Fig. 12.2.2. Brukardefinert offset med gyldig område visualisert.</h6>
 
 Den grøne boksen representerar det gyldig område der boundingbox punkta <code>(XY1, XY2)</code> er valide.
-
 </p>
 
+<h3>check_if_time_is_within_bounds()</h3>
+<p>
+Problemet her er at programmet annoterar bilete, også sjekkar han om tida på filnamnet er gyldig. 
+Det vil då seie at programmet har brukt "mykje" ressursar og tid på eit bilete vi veit på førehand ikkje er gyldig.<br>
+
+Eit anna problem som eg har stilt <a href="https://github.com/ultralytics/yolov5/issues/7898" target="_blank">spørsmål</a> om på "YOLOv5 Repositoriet". Er korleis ein hoppe over ein heil video frå datasettet.
+Det som skjer her er at funksjonen sjekkar tida på videoen via strengen. Deretter skippar den ein "frame" når vi veit heile videoen er ugyldig. Derfor for betre optimalisering, og sparing av tid skulle vi ha hoppa over heile videoen. Og ikkje berre ein "frame" til vi har gått igjennom heile videoen.
+</p>
 
 <h2>Kjelder</h2>
 <h3>NVIDIA docker.</h3>
