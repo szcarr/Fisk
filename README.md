@@ -292,6 +292,7 @@ Funksjonen sjekkar om positionen til boundingboxen er innanfor eit visst område
 <b>Eksempel:</b><br>
 
 ![image](https://user-images.githubusercontent.com/67342876/169707421-99038cf2-3a5b-4386-9e44-b5f72ca94567.png)
+<h6>Fig. 10.2.2. Visuell representasjon av offset.</h6>
 
 <code>min_width_offset</code> er den <code>raude</code> stipla linja.<br>
 <code>max_width_offset</code> er den <code>lilla</code> stipla linja.<br>
@@ -301,6 +302,16 @@ Funksjonen sjekkar om positionen til boundingboxen er innanfor eit visst område
 <br>
 Om <code>X</code> verdien til <code>XY*</code> er mellom den <code>raude</code> og <code>lilla</code> stipla linja. Er <code>X</code> verdien til <code>XY*</code> ein godkjent posisjon.<br>
 Om <code>Y</code> verdien til <code>XY*</code> er mellom den <code>kvite</code> og <code>svarte</code> stipla linja. Er <code>Y</code> verdien til <code>XY*</code> ein godkjent posisjon.<br>
+
+
+<h6>Fig. 10.2.3. Gyldig boundingbox.</h6>
+I dette tilfelle er begge posisjonane til boundingboxen godkjent.
+
+<h6>Fig. 10.2.4. Ugyldig boundingbox.</h6>
+<br>
+Derimot dette tilfelle er det ikkje godkjent, fordi:<br>
+Både <code>X</code> og <code>Y</code> verdien til <code>XY1</code> er i offset område som gjer posisjon ugyldig.
+
 
 
 
