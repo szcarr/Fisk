@@ -291,7 +291,7 @@ Funksjonen sjekkar om positionen til boundingboxen er innanfor eit visst område
 <br>
 <b>Eksempel:</b><br>
 
-![image](https://user-images.githubusercontent.com/67342876/169707350-171dd52d-e346-4636-9a90-b41ed3b89f77.png)
+![image](https://user-images.githubusercontent.com/67342876/169707402-60eb3540-56e4-46e2-99ac-a1618cb24dd6.png)
 
 <code>min_width_offset</code> er den <code>raude</code> stipla linja.<br>
 <code>max_width_offset</code> er den <code>lilla</code> stipla linja.<br>
