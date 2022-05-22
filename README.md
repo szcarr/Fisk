@@ -435,7 +435,7 @@ Vi brukar <i>pascal_voc_writer</i> til å formattere og lage xml fila.<br>
 <p>
 Her er små ting/endringar eg har gjort i programmet.
 </p>
-<h4>argument_parser</h4>
+<h4>Argument_parser</h4>
 <p>
 Har lagt til mine fire kommandolinje argument.
 <br>
@@ -444,7 +444,7 @@ Har lagt til mine fire kommandolinje argument.
 <h6>Fig. 11.1.1. Lagt til eigendefinerte argument.</h6>
 </p>
 
-<h4>prints</h4>
+<h4>Prints</h4>
 <p>
 Eg har lagt til mine eigne prints som printar relevant informasjon.
 </p>
@@ -452,6 +452,14 @@ Eg har lagt til mine eigne prints som printar relevant informasjon.
 ![image](https://user-images.githubusercontent.com/67342876/169711235-f55f1675-4e52-43b2-9523-899d0bec795c.png)
 <h6>Fig. 11.2.1. Mine prints.</h6>
 
+<h4>Lagring og sjekking</h4>
+<p>
+Her er korleis programmet sjekkar og lagrar relevant data.
+</p>
+
+![image](https://user-images.githubusercontent.com/67342876/169711631-8a2d5837-56ba-42dd-b94f-6045fc097ff7.png)
+
+<h6>Fig. 11.3.1. Kodesnipp.</h6>
 
 <h2>Diskusjon</h2>
 <p>
