@@ -26,6 +26,7 @@ For dette prosjektet brukar eg følgjande hardware for FiskAI:<br>
 <h2>Oppsettet</h2>
 <p>
 Oppsettet består av komponentane som er lista i <i>Hardware</i>. Vi skulle trikse med straumforsyning, så vi fekk forsynt riktig spenning til hovudkortet.
+Eg fekk aldri ein "skikkeleg" introduksjon til det vi dreiv på med når vi triksa med straumforsyninga, sidan eg var vekke då vi begynte på straumforsyninga.
 
 
 ![oppsett](https://user-images.githubusercontent.com/67342876/169713056-bbe9ed6a-1e14-4f4a-b918-459f8c19eada.jpg)
@@ -40,7 +41,6 @@ Oppsettet består av komponentane som er lista i <i>Hardware</i>. Vi skulle trik
 
 Alt såg bra ut heilt til eg var ferdig å trikse på straumforsyninga, og då skulle teste den. Det viste seg då at den straumforsyninga eg fekk utdelt ikkje fungerte.
 Det var jo sjølvsagt veldig dumt av meg å ikkje teste den før eg begynte å mekke på den. Det endte då opp med at eg fekk eit nytt hovedkort og straumforsyning som fungerte.
-
 
 
 
