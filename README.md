@@ -381,7 +381,7 @@ Funksjonen splittar <code>img_string</code> til vi får Klokketimen frå strenge
 <br>
 
 `**` frå filstrengen i eksempelet ovanfor er det vi vi skal hente ut frå strengen, dette er då klokketimen. Funksjonen får tak i den verdien dynamisk, ved å splitte strengen etter `__`.
-Deretter tar vi det andre elementet vi får frå lista av <code>split()</code>.<br>
+Deretter tar vi det andre elementet vi får frå lista av <code>split()</code>.
 Då har vi strengen: <code>10-45-01.mp4_13700.jpg</code> Til slutt splittar vi strengen igjen etter <code>-</code>. Indeks null er då <code>klokketime</code>. Så konverterar vi strengen til <code>int</code>.<br>
 <br>
 Vi sjekkar om <code>klokketime</code> er utanfor tidsramma. Visst <code>klokketime</code> er mindre enn <code>minimum_tid</code> eller <code>klokketime</code> er større enn <code>maximum_tid</code>. Då er tida utanfor tidsramma og då returnerar funksjonen <code>False</code>. Ellers returnerar den <code>True</code>.<br>
@@ -524,7 +524,7 @@ Med å gjere dette får programmet meir fleksibilitet.<br>
 Ein av endringane eg kan tenke på å gjere her, er å la brukaren kunne spesifisere sin eigen offset for kvar av kantane til skjermen. På den måten kan brukaren "teikne" sitt eige gyldige området.
 
 > python detect.py --offset 50 2 2 70<br>
-> python detect.py --offset `nord` `aust` `sør` `vest`<br
+> python detect.py --offset `nord` `aust` `sør` `vest`<br>
 
 <b>Korleis boksen hadde sett ut med dei innstillingane:</b>
 <br>
